@@ -20,10 +20,12 @@ h2 {
 
 h1, h2 {
     font-family: 'Nixie One';
+    margin-bottom: 4rem;
 }
 
 h3, h4, h5 {
   font-size: 1.8rem;
+  margin-bottom: 3rem;
 }
 
 h3, h4, p {
@@ -34,21 +36,35 @@ h3, h4, p {
 p {
   font-size: 1.6rem;
   line-height: 3.2rem;
+  margin-bottom: 4.5rem;
+}
+
+header {
+  height: 100px;
+}
+
+nav {
+  float: right;
+}
+
+.left {
+  float: left;
+  padding-left: 2.5rem;
+  padding-top: 3rem;
 }
 
 .container {
   background-color: #ffffff;
   margin: 0 auto;
-  width: 50rem;
+  width: 98%;
 }
 
-.section {
+/* .section {
   background-color: #152A59;
   color: #152A59;
-  /* height: 20rem; */
   margin-top: 1rem;
   padding: 100px 10px;
-}
+} */
 
 .work {
   background-color: #EBEBEB;
@@ -67,6 +83,20 @@ p {
   font-family: 'Lato';
   font-size: 2.4rem;
   font-weight: lighter;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.hero-image{
+  height: 155px;
+  width: 285px;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 button {
@@ -91,6 +121,93 @@ a {
 img {
   height: auto;
   width: 100%;
+}
+
+/* Style the navigation menu */
+.topnav {
+  /* overflow: hidden; */
+  background-color: #FFFFFF;
+  /* padding-right: 2.5rem; */
+  /* position: relative; */
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+  background-color: #EBEBEB;
+  margin-top: 3rem;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 50;
+  position: fixed;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: #000000;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  text-align: center;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  /* background: black; */
+  /* display: block; */
+  /* float: right; */
+  margin-top: 3rem;
+  margin-right: 2.5rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a.icon:hover {
+  background-color: #EBEBEB;
+  margin-right: 2.5rem;
+}
+
+footer{
+  background-color: #555459;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.bottomnav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100px;
+}
+
+.desktop-version{
+  display: none;
+}
+
+.fa-3x {
+  color: #FFFFFF;
+  padding-right: 37px;
+}
+
+.fa-envelope-square {
+  padding-right: 0;
+}
+
+.headshot {
+  height: auto;
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4rem;
+  width: 50%;
+}
+
 }
 
 /* @media screen and (min width 768px){
@@ -138,7 +255,3 @@ img {
 }
 
 }
-
-@media screen and (min width 110em){
-
-} */
