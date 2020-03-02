@@ -13,53 +13,61 @@
 
   </head>
   <body>
+
     <div class="container">
 
       <!-- topnav -->
       <header class="topnav">
-        <img src="images/homepage/Logo.png" alt="Logo">
-        <a class="active" href="#home"></a>
-        <a href="#work">Work</a>
-        <a href="#about">About</a>
-        <a href="#connect">Connect</a>
+        <nav>
+          <ul>
+            <li>
+              <a href="index.html">
+                <img src="images/homepage/Logo.png" alt="Logo" class="logo">
+              </a>
+            </li>
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#connect">Connect</a></li>
+          </ul>
+        </nav>
       </header>
 
       <!-- intro section -->
-      <section class="intro">
-        <h1>Seraph</h1>
+      <section class="intro title">
+        <h1 class "title">Seraph</h1>
         <h4>A secure, professional platform to store all your work</h4>
         <img src="images/seraph-case-study/Seraph Dashboard Mockup.jpg" alt="Seraph App">
         <button type="button" name="button">View Prototype</button>
         <ul>
-          <li>My Roles:</li>
-          <li>UX Research</li>
-          <li>UX Design</li>
-          <li>Visual Design</li>
-          <li>Branding</li>
-          <li>User Testing</li>
+          <li><h3>My Roles:</h3></li>
+          <li><p>UX Research</p></li>
+          <li><p>UX Design</p></li>
+          <li><p>Visual Design</p></li>
+          <li><p>Branding</p></li>
+          <li><p>User Testing</p></li>
         </ul>
         <ul>
-          <li>Deliverables:</li>
-          <li>User Surveys</li>
-          <li>Competitive Analysis</li>
-          <li>User Personas</li>
-          <li>User Stories</li>
-          <li>Site Map</li>
-          <li>User Flows</li>
-          <li>Wireframes</li>
-          <li>Logo</li>
-          <li>Style Guide</li>
-          <li>High Fidelity Prototype</li>
+          <li><h3>Deliverables:</h3></li>
+          <li><p>User Surveys</p></li>
+          <li><p>Competitive Analysis</p></li>
+          <li><p>User Personas</p></li>
+          <li><p>User Stories</p></li>
+          <li><p>Site Map</p></li>
+          <li><p>User Flows</p></li>
+          <li><p>Wireframes</p></li>
+          <li><p>Logo</p></li>
+          <li><p>Style Guide</p></li>
+          <li><p>High Fidelity Prototype<p></li>
         </ul>
         <ul>
-          <li>Specifications:</li>
-          <li>Tools:</li>
-          <li>Figma</li>
-          <li>Sketch</li>
-          <li>Usability Hub</li>
-          <li>Google Forms</li>
-          <li>Duration:</li>
-          <li>Two Months</li>
+          <li><h3>Specifications:</h3></li>
+          <li><p>Tools:</p></li>
+          <li><p>Figma</p></li>
+          <li><p>Sketch</p></li>
+          <li><p>Usability Hub</p></li>
+          <li><p>Google Forms</p></li>
+          <li><p>Duration:</p></li>
+          <li><p>Two Months</p></li>
         </ul>
         <h2>Problem:</h2>
           <p>There is still much to improve upon existing cloud storage products
@@ -79,8 +87,8 @@
       </section>
 
       <!-- Research and Discovery  -->
-      <section class="Research and Discovery">
-        <h2>Research and Discovery</h2>
+      <section class="research">
+        <h2 class="title">Research and Discovery</h2>
         <div class="survey">
           <h4>Survey Analysis</h4>
           <p>I began by gathering feedback from users to help guide me through
@@ -133,8 +141,8 @@
             </ul>
             <button type="button" name="button">View Survey Analysis</button>
         </div>
-        <div class="Comp-Analysis">
-          <h2>Competitive Analysis</h2>
+        <div class="comp-analysis">
+          <h2 class="title">Competitive Analysis</h2>
           <p>I highlighted some of the weaknesses in the competition to discover
             how Seraph could fill in the gaps to cater to our users.</p>
             <ul>
@@ -166,7 +174,7 @@
             </ul>
             <button type="button" name="button">View Competitive Analysis</button>
         </div>
-        <div class="Personas">
+        <div class="personas">
           <h2>Developing User Personas</h2>
           <p>With information from my research and further interviews with
             survey participants, I created these personas to help me keep user
@@ -217,7 +225,7 @@
 
       <!-- information Arquitecture  -->
       <section class="information Arquitecture">
-        <h2>Information Arquitecture</h2>
+        <h2 class="title">Information Arquitecture</h2>
         <div class="flow">
           <h4>User Stories and User Flows</h4>
           <p>I created user stories, a site map and user flows to lay the
@@ -268,7 +276,7 @@
 
       <!-- Identity and Branding -->
       <section class="Identity and Branding">
-        <h2>Identity and Branding</h2>
+        <h2 class="title">Identity and Branding</h2>
         <div class="palette fonts">
           <h4>Color Palette and Font Pairs</h4>
           <p>I chose a complementary color palette to provide the right amount
@@ -329,7 +337,7 @@
       <!-- Further Testing -->
       <section class="Further Testing">
         <div class="Second Round">
-          <h4>Second Round of Usability Testing</h4>
+          <h4 class="title">Second Round of Usability Testing</h4>
           <p>Once the branding elements were added and I took into account the
             feedback from the first round of user testing, I came up with the
             second and third iterations of the product. In these iterations of
@@ -423,6 +431,7 @@
               </div>
             </div>
         </div>
+      </div>
 
         <!-- Laptop Mockups -->
 
@@ -450,28 +459,29 @@
           <button type="button" name="button">View Prototype</button>
         </div>
       </section>
+    </section>
+    <!-- bottomnav -->
+    <footer class="bottomnav">
+      <h4>Thanks for stopping by. Let’s connect!</h4>
+      <ul class="bottomnav">
+        <li>
+          <a href="https://www.linkedin.com/in/martinez-paulina/">
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/paulinisky">
+            <i class="fa fa-github-square" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:paulinisky@gmail.com">
+            <i class="fa fa-envelope-square" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </div>
 
-      </section>
-      <!-- bottomnav -->
-      <footer class="bottomnav">
-        <h4>Thanks for stopping by. Let’s connect!</h4>
-        <ul class="bottomnav">
-          <li>
-            <a href="https://www.linkedin.com/in/martinez-paulina/">
-              <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/paulinisky">
-              <i class="fa fa-github-square" aria-hidden="true"></i>
-            </a>
-          </li>
-          <li>
-            <a href="mailto:paulinisky@gmail.com">
-              <i class="fa fa-envelope-square" aria-hidden="true"></i>
-            </a>
-          </li>
-        </ul>
-      </footer>
   </body>
 </html>

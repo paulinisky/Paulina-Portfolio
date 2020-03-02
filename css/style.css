@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: #777777;
+}
+
+h1 {
+  font-size: 3.6rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h1, h2 {
+    font-family: 'Nixie One';
+}
+
+h3, h4, h5 {
+  font-size: 1.8rem;
+}
+
+h3, h4, p {
+  font-family: 'Lato';
+  font-weight: lighter;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+}
+
+.container {
+  background-color: #ffffff;
+  margin: 0 auto;
+  width: 50rem;
+}
+
+.section {
+  background-color: #152A59;
+  color: #152A59;
+  /* height: 20rem; */
+  margin-top: 1rem;
+  padding: 100px 10px;
+}
+
+.work {
+  background-color: #EBEBEB;
+}
+
+.title {
+  align-content: center;
+}
+
+.logo {
+  height: 42.93px;
+  width: 33px;
+}
+
+.topnav {
+  font-family: 'Lato';
+  font-size: 2.4rem;
+  font-weight: lighter;
+}
+
+button {
+  align-items: center;
+  background-color: #152A59;
+  border-radius: 25px;
+  color: #ffffff;
+  display: inline-block;
+  font-family: 'Lato';
+  font-size: 1.8rem;
+  height: 36px;
+  width: 211px;
+}
+
+a {
+  color: #7F438E;
+  font-family: 'Lato';
+  font-weight: lighter;
+  text-decoration: none;
+}
+
+img {
+  height: auto;
+  width: 100%;
+}
+
+/* @media screen and (min width 768px){
+  .container {
+    width: 70rem;
+  }
+}
+
+@media screen and (min width 1000px){
+  .container {
+    width: 98rem;
+  }
+  h1 {
+    font-size: 6.4rem;
+  }
+
+  h2 {
+    font-size: 4.8rem;
+  }
+
+  h1, h2 {
+      font-family: 'Nixie One';
+  }
+
+  h3, h4 {
+    font-size: 3.6rem;
+  }
+
+  h3, h4, p {
+    font-family: 'Lato';
+    font-weight: lighter;
+  }
+
+  h5 {
+    font-size: 2.4rem;
+  }
+
+  p {
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+}
+
+.topnav {
+  font-size: 1.8rem;
+}
+
+}
+
+@media screen and (min width 110em){
+
+} */
