@@ -6,10 +6,6 @@ html {
   font-size: 10px;
 }
 
-body {
-  background-color: #777777;
-}
-
 h1 {
   font-size: 3.6rem;
 }
@@ -189,7 +185,7 @@ footer{
   display: none;
 }
 
-.fa-3x {
+.fa-5x {
   color: #FFFFFF;
   padding-right: 37px;
 }
@@ -208,6 +204,14 @@ footer{
   width: 50%;
 }
 
+.about {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.resume-edu {
+  margin-left: 3rem;
+  margin-top: 3.5rem;
 }
 
 /* @media screen and (min width 768px){
