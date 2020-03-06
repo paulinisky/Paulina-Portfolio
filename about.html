@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Lato|Nixie+One&display=swap" rel="stylesheet">
+    <script src="topnav.js"></script>
 
 
   </head>
@@ -20,7 +21,7 @@
       <!-- topnav -->
       <header>
         <div class="left">
-          <a href="index.html">
+          <a href="index.html" class="active">
             <img src="images/homepage/Logo.png" alt="Logo" class="logo">
           </a>
         </div>
@@ -32,6 +33,23 @@
           </ul>
         </nav>
         <nav class="mobile-version">
+          <!-- Top Navigation Menu -->
+          <div class="topnav">
+              <a href="" class="active">
+                <!-- <img src="images/homepage/Logo.png" alt="Logo" class="logo"> -->
+              </a>
+            <!-- Navigation links (hidden by default)-->
+            <div id="myLinks">
+              <a href="#bottm">Work</a>
+              <a href="about.html">About</a>
+              <a href="connect.html">Connect</a>
+            </div>
+            <!--"Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+        </nav>
 
       </header>
       <!-- background image -->
@@ -40,8 +58,8 @@
       <!-- work section -->
       <section class="">
         <div class="about">
+          <h1 class="title">About me</h1>
           <img src="images/about-me/headshot.png" alt="Headshot" class="headshot">
-          <h1>About me</h1>
           <p>Hello again!  Paulina here.</p>
           <p>I wasn’t always a UX/UI Designer but I did a lot of designing. In
             my previous life (as a teacher) - I loved designing educational
@@ -80,22 +98,23 @@
         </div>
 
       <!-- bottomnav -->
-      <footer class="bottomnav">
-        <h4>Thanks for stopping by. Let’s connect!</h4>
+      <footer>
+        <h4>Thanks for stopping by.</h4>
+        <h4>Let’s connect!</h4>
         <ul class="bottomnav">
           <li>
             <a href="https://www.linkedin.com/in/martinez-paulina/">
-              <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+              <i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
             </a>
           </li>
           <li>
             <a href="https://github.com/paulinisky">
-              <i class="fa fa-github-square" aria-hidden="true"></i>
+              <i class="fa fa-github-square fa-3x" aria-hidden="true"></i>
             </a>
           </li>
           <li>
             <a href="mailto:paulinisky@gmail.com">
-              <i class="fa fa-envelope-square" aria-hidden="true"></i>
+              <i class="fa fa-envelope-square fa-3x" aria-hidden="true"></i>
             </a>
           </li>
         </ul>

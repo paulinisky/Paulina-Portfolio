@@ -6,6 +6,21 @@ html {
   font-size: 10px;
 }
 
+.container {
+  margin: 0 auto;
+  width: 98%;
+}
+
+.background {
+  opacity: 0.3;
+  transform: rotate(90deg);
+}
+
+.hero-image {
+  height: auto;
+  width: 100%;
+}
+
 h1 {
   font-size: 3.6rem;
 }
@@ -49,36 +64,9 @@ nav {
   padding-top: 3rem;
 }
 
-.container {
-  background-color: #ffffff;
-  margin: 0 auto;
-  width: 98%;
-}
-
-/* .section {
-  background-color: #152A59;
-  color: #152A59;
-  margin-top: 1rem;
-  padding: 100px 10px;
-} */
-
-.work {
-  background-color: #EBEBEB;
-}
-
-.title {
-  align-content: center;
-}
-
 .logo {
   height: 42.93px;
   width: 33px;
-}
-
-.topnav {
-  font-family: 'Lato';
-  font-size: 2.4rem;
-  font-weight: lighter;
 }
 
 .hero {
@@ -88,11 +76,35 @@ nav {
   justify-content: space-around;
 }
 
-.hero-image{
+/* .hero-image{
   height: 155px;
   width: 285px;
   margin-top: 4rem;
   margin-bottom: 4rem;
+} */
+
+/* .section {
+  background-color: #152A59;
+  color: #152A59;
+  margin-top: 1rem;
+  padding: 100px 10px;
+} */
+
+.title {
+  text-align: center;
+}
+
+.topnav {
+  font-family: 'Lato';
+  font-size: 2.4rem;
+  font-weight: lighter;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 button {
@@ -110,6 +122,7 @@ button {
 a {
   color: #7F438E;
   font-family: 'Lato';
+  font-size: 1.6rem;
   font-weight: lighter;
   text-decoration: none;
 }
@@ -167,6 +180,96 @@ img {
   margin-right: 2.5rem;
 }
 
+.work {
+  background-color: #EBEBEB;
+}
+
+/* .fa {
+  color: #152A59;
+} */
+.intro-copy {
+  padding: 1em;
+  margin: 50vh auto;
+  max-width: 15em;
+  font-family: 'Lato';
+  font-weight: lighter;
+  font-size: 2em;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.top-link {
+  transition: all .25s ease-in-out;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: inline-flex;
+
+	cursor: pointer;
+	align-items: center;
+	justify-content: center;
+	margin: 0 .25em 3em 0;
+	border-radius: 1rem 0 0 1rem;
+	padding: .25em;
+	width: 80px;
+	height: 80px;
+  background-color: #EBEBEB;
+
+  &.show {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &.hide {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+	svg {
+		fill: #000;
+		width: 24px;
+		height: 12px;
+	}
+
+	&:hover {
+		background-color: #E8E8E8;
+
+		svg {
+			fill: #000000;
+		}
+	}
+}
+
+.text {
+	position: absolute;
+	clip-path: inset(50%);
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	word-wrap: normal !important;
+	clip: rect(1px, 1px, 1px, 1px);
+
+	&:focus {
+		display: block;
+		top: 5px;
+		left: 5px;
+		z-index: 100000; // Above WP toolbar
+		clip-path: none;
+		background-color: #eee;
+		padding: 15px 23px 14px;
+		width: auto;
+		height: auto;
+		text-decoration: none;
+		line-height: normal;
+		color: #444;
+		font-size: 1em;
+		clip: auto !important;
+	}
+}
+
 footer{
   background-color: #555459;
   color: #ffffff;
@@ -185,7 +288,7 @@ footer{
   display: none;
 }
 
-.fa-5x {
+.fa-3x {
   color: #FFFFFF;
   padding-right: 37px;
 }
@@ -213,6 +316,44 @@ footer{
   margin-left: 3rem;
   margin-top: 3.5rem;
 }
+
+.form {
+  text-align: center;
+}
+
+input {
+  box-sizing: border-box;
+  color: #9B9999;
+  font-family: 'Lato';
+  font-size: 1.8rem;
+  margin: 8px 0px;
+  padding: 12px 20px;
+  width: 100%;
+}
+
+textarea {
+  color: #9B9999;
+  font-family: 'Lato';
+  font-size: 1.8rem;
+  margin: 8px 0px;
+  padding: 12px 20px;
+  width: 100%;
+}
+
+input[type=submit] {
+  background-color: #152A59;
+  border: none;
+  border-radius: 25px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Lato';
+  font-size: 1.8rem;
+  height: 36px;
+  padding: 4px 2px;
+  width: 211px;
+}
+
 
 /* @media screen and (min width 768px){
   .container {

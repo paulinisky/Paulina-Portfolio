@@ -11,6 +11,11 @@
     <!-- Custom Styles -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="topnav.js"></script>
+    <!-- <script src="backtotop.js"></script> -->
+    <script type="navbar.js"></script>
+
+    </script>
 
   </head>
   <body>
@@ -20,7 +25,7 @@
       <!-- topnav -->
       <header>
         <div class="left">
-          <a href="index.html">
+          <a href="index.html" class="active">
             <img src="images/homepage/Logo.png" alt="Logo" class="logo">
           </a>
         </div>
@@ -32,13 +37,29 @@
           </ul>
         </nav>
         <nav class="mobile-version">
+          <!-- Top Navigation Menu -->
+          <div class="topnav">
+              <a href="" class="active">
+                <!-- <img src="images/homepage/Logo.png" alt="Logo" class="logo"> -->
+              </a>
+            <!-- Navigation links (hidden by default)-->
+            <div id="myLinks">
+              <a href="#bottm">Work</a>
+              <a href="about.html">About</a>
+              <a href="connect.html">Connect</a>
+            </div>
+            <!--"Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+        </nav>
 
       </header>
-
       <!-- intro section -->
       <section class="intro title">
-        <h1 class "title">Seraph</h1>
-        <h4>A secure, professional platform to store all your work</h4>
+        <h1 class="title">Seraph</h1>
+        <h4 class="title">A secure, professional platform to store all your work</h4>
         <img src="images/seraph-case-study/Seraph Dashboard Mockup.jpg" alt="Seraph App">
         <button type="button" name="button">View Prototype</button>
         <ul>
@@ -96,54 +117,63 @@
           <h4>Survey Analysis</h4>
           <p>I began by gathering feedback from users to help guide me through
             this project.</p>
-            <ul>
-              <li>
-                <img src="images/seraph-case-study/survey/who.png" alt="graph">
+            <div class="slideshow-container">
+              <div class="mySlides fade" style="display: block;">
+                <img src="images/seraph-case-study/survey/who.png" alt="carousel">
                   <p>This question made me aware that many users use their cloud
                   storage app mainly for work purposes so I knew that the app I
                   would design had to be a professional platform.</p>
-              </li>
-              <li>
-                <img src="images/seraph-case-study/survey/how.png" alt="graph">
+              </div>
+              <div class="mySlides fade" style="display: none;">
+                <img src="images/seraph-case-study/survey/how.png" alt="carousel">
                   <p>I learned what collaboration features I needed to include
                     on this platform with this question which shows email and
                     link sharing as the most frequently used methods for
                     collaboration.</p>
-              </li>
-              <li>
-                <img src="images/seraph-case-study/survey/how-old.png" alt="graph">
+              </div>
+              <div class="mySlides fade" style="display: none;">
+                <img src="images/seraph-case-study/survey/how-old.png" alt="carousel">
                   <p>This question gave me insights about my target audience.
                     The app had to be geared towards users ranging in ages
                     25-44.</p>
-              </li>
-              <li>
-                <img src="images/seraph-case-study/survey/industry.png" alt="graph">
+              </div>
+              <div class="mySlides fade" style="display: none;">
+                <img src="images/seraph-case-study/survey/industry.png" alt="carousel">
                   <p>This question provided me with further information about my
                     target audience - professionals from a variety of fields but
                     many in education, design, arts and entertainment.</p>
-              </li>
-              <li>
-                <img src="images/seraph-case-study/survey/ideal.png" alt="list">
+              </div>
+              <div class="mySlides fade" style="display: none;">
+                <img src="images/seraph-case-study/survey/ideal.png" alt="carousel">
                   <p>Here I learned how users consistently stated that the most
                     important thing was for an app to be easy to use, simple and
                     clear.</p>
-              </li>
-              <li>
-                <img src="images/seraph-case-study/survey/dislike.png" alt="list">
+              </div>
+              <div class="mySlides fade" style="display: none;">
+                <img src="images/seraph-case-study/survey/dislike.png" alt="carousel">
                   <p>This question helped me  understand that the main concern
                     among users of cloud storage apps was security and the next
                     main concern was space.</p>
-              </li>
-              <li>
-                <img src="images/seraph-case-study/survey/features.png" alt="list">
+              </div>
+              <div class="mySlides fade" style="display: none;">
+                <img src="images/seraph-case-study/survey/features.png" alt="carousel">
                   <p>This final question helped me understand the goals that
                     users have in mind when using their cloud storage space and
                     how I should prioritize the tasks users could complete
                     within the structure of the app I was to create.</p>
-              </li>
-            </ul>
+              </div>
+              <div style="text-align:center">
+                <span class="dot active" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+              </div>
+
             <button type="button" name="button">View Survey Analysis</button>
-        </div>
+          </div>
         <div class="comp-analysis">
           <h2 class="title">Competitive Analysis</h2>
           <p>I highlighted some of the weaknesses in the competition to discover
@@ -462,24 +492,33 @@
           <button type="button" name="button">View Prototype</button>
         </div>
       </section>
+
+      <a class="top-link hide" href="" id="js-top">
+        <i class="fa fa-angle-up" style="font-size:36px"></i>
+        <span class="text">Back to top</span>
+      </a>
+
     </section>
+
+
     <!-- bottomnav -->
-    <footer class="bottomnav">
-      <h4>Thanks for stopping by. Let’s connect!</h4>
+    <footer>
+      <h4>Thanks for stopping by.</h4>
+      <h4>Let’s connect!</h4>
       <ul class="bottomnav">
         <li>
           <a href="https://www.linkedin.com/in/martinez-paulina/">
-            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+            <i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
           </a>
         </li>
         <li>
           <a href="https://github.com/paulinisky">
-            <i class="fa fa-github-square" aria-hidden="true"></i>
+            <i class="fa fa-github-square fa-3x" aria-hidden="true"></i>
           </a>
         </li>
         <li>
           <a href="mailto:paulinisky@gmail.com">
-            <i class="fa fa-envelope-square" aria-hidden="true"></i>
+            <i class="fa fa-envelope-square fa-3x" aria-hidden="true"></i>
           </a>
         </li>
       </ul>
