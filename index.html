@@ -22,54 +22,62 @@
     <div class="container">
       <!-- topnav -->
       <header>
-        <div class="left">
-          <a href="index.html" class="active">
-            <img src="images/homepage/Logo.png" alt="Logo" class="logo">
-          </a>
-        </div>
-        <nav class="desktop-version">
+        <!-- <div id="navbar"> -->
+        <nav class="desktop-version navbar-fixed-top">
+          <div class="left">
+            <a href="index.html" class="active">
+              <img src="images/homepage/Logo.png" alt="Logo" class="logo">
+            </a>
+          </div>
           <ul>
-            <li><a href="#bottom">Work</a></li>
+            <li><a href="#anchor-point">Work</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="connect.html">Connect</a></li>
           </ul>
         </nav>
-        <nav class="mobile-version">
+        <nav class="mobile-version navbar-fixed-top">
+          <div class="left">
+            <a href="index.html" class="active">
+              <img src="images/homepage/Logo.png" alt="Logo" class="logo">
+            </a>
+          </div>
           <!-- Top Navigation Menu -->
           <div class="topnav">
               <a href="" class="active">
                 <!-- <img src="images/homepage/Logo.png" alt="Logo" class="logo"> -->
               </a>
-            <!-- Navigation links (hidden by default)-->
-            <div id="myLinks">
-              <a href="#bottm">Work</a>
-              <a href="about.html">About</a>
-              <a href="connect.html">Connect</a>
-            </div>
-            <!--"Hamburger menu" / "Bar icon" to toggle the navigation links -->
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-              <i class="fa fa-bars"></i>
-            </a>
+                <!-- Navigation links (hidden by default)-->
+              <div id="myLinks">
+                <a href="#anchor-point">Work</a>
+                <a href="about.html">About</a>
+                <a href="connect.html">Connect</a>
+              </div>
+              <!--"Hamburger menu" / "Bar icon" to toggle the navigation links -->
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
           </div>
         </nav>
-
+      <!-- </div> -->
       </header>
 
       <!-- <div class="background">
           <img src="images/homepage/hero.png" alt="Feather" class="hero-image">
       </div> -->
       <!-- hero unit -->
-      <section class="hero">
-        <h1>Hello, I’m Paulina!</h1>
-        <h3>I’m a UX/UI Designer based in Brooklyn, NY.</h3>
-        <a href="connect.html"><button type="button">Let's work together!</button></a>
-        <a href="#anchor-point"><i class="fa fa-angle-down" style="font-size:36px;color:black"></i></a>
+      <section class="hero-image">
+        <div class="hero-text">
+          <h1>Hello, I’m Paulina!</h1>
+          <h3>I’m a UX/UI Designer based in Brooklyn, NY.</h3>
+          <a href="connect.html"><button type="button">Let's work together!</button></a>
+          <a href="#anchor-point"><i class="fa fa-angle-down" style="font-size:36px;color:black"></i></a>
+        </div>
 
       </section>
 
       <!-- work section -->
-      <section class="work">
-        <a name="anchor-point"><div class="Capstone"></a>
+      <a name="anchor-point"><section class="work"></a>
+        <div class="Capstone">
           <h2>Capstone Project</h2>
           <p>UX Research, UX/UI Design & Branding</p>
           <a href="/project.html">Read full case study<i class="fa fa-angle-right" style="font-size:24px"></i></a>
