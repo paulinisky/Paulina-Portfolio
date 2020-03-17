@@ -98,8 +98,6 @@ nav {
   font-weight: lighter;
 }
 
-
-
 button {
   align-items: center;
   background-color: #152A59;
@@ -271,6 +269,28 @@ img {
 		font-size: 1em;
 		clip: auto !important;
 	}
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.content {
+  padding: 2px 16px;
 }
 
 footer{
