@@ -1,0 +1,77 @@
+h1 {
+  padding-bottom: 6rem;
+}
+
+h5 {
+  padding-bottom: 3rem;
+}
+
+p {
+  padding-bottom: 4rem;
+  line-height: 3rem;
+}
+
+a {
+  font-size: 1.8rem;
+  font-family: 'Lato';
+}
+
+.me-pic {
+  text-align: center;
+}
+
+.me-pic img {
+  padding-bottom: 6rem;
+}
+
+@media screen and (min-width: 768px) {
+ .img-small {
+  width: 33.6rem;
+  height: auto;
+}
+
+.img-large {
+  display: none;
+}
+
+.about p {
+  padding-right: 10rem;
+}
+
+}
+
+.about-me {
+  display: flex;
+  padding-top: 16rem;
+}
+
+.rightside {
+  border-left: 1px solid;
+  padding: 0 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    text-align: center;
+  }
+
+  a {
+    font-size: 1.6rem;
+  }
+
+  .about-me {
+    flex-wrap: wrap;
+}
+
+  .img-large {
+    width: 80%;
+}
+
+  .img-small {
+    display: none;
+}
+
+  .resume-edu {
+    padding-bottom: 5rem;
+  }
+}

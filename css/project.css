@@ -1,0 +1,322 @@
+/* project main titles, subtitles and text */
+
+.chapter {
+  padding-top: 10rem;
+}
+
+.background3 {
+  background-color: #fff2f3;
+}
+
+.background4 {
+  background-color: #f7f7f7;
+}
+
+h2 {
+  border-bottom: solid 1px black;
+  padding-bottom: 2rem;
+}
+
+h6 {
+  padding-top: 2rem;
+}
+
+.project-text {
+  padding-top: 2rem;
+  max-width: 84rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.padding_top-six {
+  padding-top: 6rem;
+}
+
+.padding_bottom-six {
+  padding-bottom: 6rem;
+}
+
+.three, .four {
+  padding-top: 3rem;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.first ul {
+  font-family: 'Lato';
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.6;
+  padding-top: 2rem;
+}
+
+.conclusion {
+  padding-bottom: 14rem;
+}
+
+/* project images and buttons */
+
+.flex-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-wrapper-intro {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding-top: 8rem;
+}
+
+.homepage {
+  box-shadow: 2px 2px 2px #ebebeb;
+}
+
+.flex-wrapper-four {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.flex-wrapper-branding {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.flex-wrapper-logo {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.flex-wrapper-ptest {
+  display: flex;
+}
+
+.sa {
+  justify-content: space-around;
+}
+
+.sb {
+  justify-content: space-between;
+}
+
+.img-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.responsive-img {
+  max-width: 100%;
+}
+
+.img_width-eighty {
+  max-width: 80%;
+}
+
+/* persona flex containers */
+
+.img-persona {
+  width: 200px;
+  height: auto;
+}
+
+.persona-top {
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.persona-details {
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 50%;
+}
+
+/* ordered list styling */
+
+ol {
+  font-family: "Lato";
+  font-size: 1.8rem;
+  font-weight: 300;
+  list-style: none;
+  counter-reset: circle-counter;
+  padding-top: 3rem;
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+ol li {
+  counter-increment: circle-counter;
+}
+ol li::before {
+  content: counter(circle-counter) ". ";
+        background-color: #99335E;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        display: inline-block;
+        font-size: 1rem;
+        line-height: 2rem;
+        color: white;
+        text-align: center;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+        position: relative;
+        top: -2px;
+    }
+
+&:last-child {
+        margin-bottom: 0;
+    }
+    li {
+        margin-left: 1.25rem;
+    }
+}
+
+// General styling
+html {
+	font-size: 16px;
+}
+body {
+	margin: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .subtitle {
+    padding-top: 5rem;
+  }
+
+  .intro-text {
+    width: 98%;
+  }
+
+  .homepage {
+    width: 98%;
+  }
+
+  .flex-wrapper {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .flex-wrapper-ptest {
+    flex-wrap: wrap;
+  }
+
+  .list {
+    text-align: center;
+  }
+
+  .middle, .bottom {
+    padding-top: 4.5rem;
+  }
+
+  .survey-img {
+    width: 100%;
+    padding-top: 3rem;
+  }
+
+  .comp-img {
+  width: 98%;
+  }
+
+  .persona-one {
+    padding-bottom: 3rem;
+  }
+
+  .persona-two {
+      border-top: 1px solid;
+      padding-top: 3rem;
+  }
+
+  .wireframe-img {
+    width: 98%;
+  }
+
+  .two, .three, .four {
+    padding-top: 3rem;
+  }
+
+  .branding-img-one {
+    width: 98%;
+    height: auto;
+  }
+
+  .branding-img-two {
+    width: 98%;
+  }
+
+  .branding-img {
+    width: 70%;
+  }
+
+  .logo-img {
+    width: 98%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .subtitle {
+    padding-top: 8rem;
+  }
+
+  .intro-text {
+    width: 50%;
+  }
+
+  .homepage {
+    width: 40%;
+  }
+
+  .survey-img {
+    width: 100%;
+    padding-top: 3rem;
+  }
+
+  .comp-img {
+  width: 328px;
+  height: auto;
+  }
+
+  .persona-two {
+    border-left: 1px solid;
+    padding-left: 3rem;
+}
+
+.img-sketch {
+    width: 40rem;
+    height: auto;
+}
+
+.wireframe-img {
+  width: 49%;
+}
+
+.three, .four {
+  padding-top: 3rem;
+}
+
+.branding-img-one {
+  width: 40%;
+}
+
+.branding-img-two {
+  width: 50%;
+}
+
+.branding-img {
+  width: 30%;
+}
+
+.logo-img {
+  width: 30%;
+}
+}

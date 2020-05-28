@@ -6,7 +6,8 @@
 
     <!-- Font Awesome -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato|Nixie+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Lato:wght@300;400;700&family=Zilla+Slab:wght@300;400;600&display=swap" rel="stylesheet">
+
     <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -14,109 +15,98 @@
     <!-- Custom Styles -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="shortcut icon" type="img/svg" href="images/homepage/logo.svg">
     <script src="topnav.js"></script>
 
   </head>
+
   <body>
+    <div class="hero-image">
+       <nav class="navbar">
+         <span class="navbar-toggle" id="js-navbar-toggle">
+           <i class="fa fa-bars"></i>
+         </span>
+         <a href="#hero" class="logo"><img src="images/homepage/logo.svg" alt="Logo" class="logo"></a>
+         <ul class="main-nav" id="js-menu">
+           <li><a href="#work" class="nav-links current">Work</a></li>
+           <li><a href="about.html" class="nav-links">About</a></li>
+           <li><a href="connect.html" class="nav-links">Contact</a></li>
+         </ul>
+       </nav>
 
-    <div class="container">
-      <!-- topnav -->
-      <header>
-        <!-- <div id="navbar"> -->
-        <nav class="desktop-version navbar-fixed-top">
-          <div class="left">
-            <a href="index.html" class="active">
-              <img src="images/homepage/Logo.png" alt="Logo" class="logo">
+       <div class="content">
+       <section class="hero-container">
+         <h1>Hello, I'm Paulina!</h1>
+         <h6 class="subtitle">I'm a Product Designer based in Brooklyn, NY.</h6>
+         <button class="btn" onclick="window.location.href = 'mailto:paulinisky@gmail.com';">Contact me to work together!</button>
+         <a href="#work"><div class="arrow-down"><span></span></div></a>
+       </section>
+
+     <div class="background">
+
+       <a name="work">
+      <div class="project-wrapper">
+        <div class="project">
+          <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/s960x960/96289788_10115462360367750_7120946027468685312_o.jpg?_nc_cat=103&_nc_sid=8024bb&_nc_ohc=x9M6Ihp95VoAX-962KG&_nc_ht=scontent-lga3-1.xx&_nc_tp=7&oh=8901f013db61e542570d72a8ed6471cc&oe=5EDF6E42" alt="" class="macbook-img">
+          <div class="project-description">
+            <h3>Seraph</h3>
+            <p>UX Research, UX / UI Design & Branding</p>
+            <a href="project.html">
+              <p class="view-link">View Case Study ></p>
             </a>
           </div>
-          <ul>
-            <li><a href="#anchor-point">Work</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="connect.html">Connect</a></li>
-          </ul>
-        </nav>
-        <nav class="mobile-version navbar-fixed-top">
-          <div class="left">
-            <a href="index.html" class="active">
-              <img src="images/homepage/Logo.png" alt="Logo" class="logo">
-            </a>
-          </div>
-          <!-- Top Navigation Menu -->
-          <div class="topnav">
-              <a href="" class="active">
-                <!-- <img src="images/homepage/Logo.png" alt="Logo" class="logo"> -->
-              </a>
-                <!-- Navigation links (hidden by default)-->
-              <div id="myLinks">
-                <a href="#anchor-point">Work</a>
-                <a href="about.html">About</a>
-                <a href="connect.html">Connect</a>
-              </div>
-              <!--"Hamburger menu" / "Bar icon" to toggle the navigation links -->
-              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-              </a>
-          </div>
-        </nav>
-      <!-- </div> -->
-      </header>
-
-      <!-- <div class="background">
-          <img src="images/homepage/hero.png" alt="Feather" class="hero-image">
-      </div> -->
-      <!-- hero unit -->
-      <section class="hero-image">
-        <div class="hero-text">
-          <h1>Hello, I’m Paulina!</h1>
-          <h3>I’m a UX/UI Designer based in Brooklyn, NY.</h3>
-          <a href="connect.html"><button type="button">Let's work together!</button></a>
-          <a href="#anchor-point"><i class="fa fa-angle-down" style="font-size:36px;color:black"></i></a>
         </div>
 
-      </section>
-
-      <!-- work section -->
-      <a name="anchor-point"><section class="work"></a>
-        <div class="Capstone card">
-          <img src="images/homepage/blank-screen.png" alt="Laptop" style="width:100%">
-          <div class="content">
-            <h2>Capstone Project</h2>
-            <p>UX Research, UX/UI Design & Branding</p>
-            <a href="/project.html">Read full case study<i class="fa fa-angle-right" style="font-size:24px"></i></a>
+        <div class="project">
+          <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/s960x960/96289788_10115462360367750_7120946027468685312_o.jpg?_nc_cat=103&_nc_sid=8024bb&_nc_ohc=x9M6Ihp95VoAX-962KG&_nc_ht=scontent-lga3-1.xx&_nc_tp=7&oh=8901f013db61e542570d72a8ed6471cc&oe=5EDF6E42" alt="" class="macbook-img">
+          <div class="project-description">
+            <h3>Passion Florist</h3>
+            <p>UX Research, UX / UI Design & Branding</p>
+            <a href="">
+              <p class="view-link">View Case Study ></p>
+            </a>
           </div>
         </div>
-        <div class="Seraph card">
-          <img src="images/homepage/seraph-mockup.png" alt="Storage App" style="width:100%">
-          <div class="">
-            <h2>Seraph</h2>
-            <p>UX Research, UX/UI Design & Branding</p>
-            <a href="/project.html">Read full case study <i class="fa fa-angle-right" style="font-size:24px"></i></a>
-          </div>
-        </div>
-      </section>
 
-      <!-- bottomnav -->
-      <footer>
-        <h4>Thanks for stopping by.</h4>
-        <h4>Let’s connect!</h4>
-        <ul class="bottomnav">
-          <li>
-            <a href="https://www.linkedin.com/in/martinez-paulina/">
-              <i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/paulinisky">
-              <i class="fa fa-github-square fa-3x" aria-hidden="true"></i>
-            </a>
-          </li>
-          <li>
-            <a href="mailto:paulinisky@gmail.com">
-              <i class="fa fa-envelope-square fa-3x" aria-hidden="true"></i>
-            </a>
-          </li>
-        </ul>
-      </footer>
-    </div>
+      </div>
+
+  </div>
+  </a>
+     </section>
+     </a>
+
+     <div class="background2">
+
+         <footer class="footer-grid">
+           <p class="line1">Thanks for stopping by.</p>
+           <p class="line2">Let’s connect!</p>
+           <ul class="bottom-nav">
+             <li class="connect">
+               <a href="https://www.linkedin.com/in/martinez-paulina/">
+                 <i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i>
+               </a>
+             </li>
+             <li class="connect">
+               <a href="https://github.com/paulinisky">
+                 <i class="fa fa-github-square fa-4x" aria-hidden="true"></i>
+               </a>
+             </li>
+             <li class="connect">
+               <a href="mailto:paulinisky@gmail.com">
+                 <i class="fa fa-envelope-square fa-4x" aria-hidden="true"></i>
+               </a>
+             </li>
+           </ul>
+         </footer>
+     </div>
+
+   </div>
+  </div>
+
+ </div>
+
+
+
   </body>
-</html>

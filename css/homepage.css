@@ -1,0 +1,131 @@
+/* hero unit */
+
+.hero-image {
+  position: sticky;
+  top: 0;
+  background-image: linear-gradient(
+      25deg,
+      rgba(252, 252, 252, 0.1),
+      rgba(252, 252, 252, 0.3)
+    ),
+    url(../images/homepage/hero-image.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 0;
+}
+
+.content {
+  position: relative;
+}
+
+.hero-container {
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  height: 530px;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  padding-top: 10rem;
+  text-align: center;
+  width: 95%;
+}
+
+.arrow-down {
+  margin: 0 auto;
+  padding-top: 10rem;
+  text-align: center;
+  width: 100%;
+}
+
+.arrow-down::after {
+  border-right: 5px solid #2e2e2e;
+  border-bottom: 5px solid #2e2e2e;
+  content: "";
+  cursor: pointer;
+  height: 20px;
+  margin: 43rem auto 22.8rem auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  width: 20px;
+}
+
+/* work section */
+
+.background {
+  position: relative;
+  z-index: 1;
+}
+
+.project-wrapper {
+  padding: 2rem;
+  max-width: 70rem;
+  margin: auto;
+}
+
+.project {
+  background-color: #fff;
+  display: grid;
+  margin: 5rem 0 10rem;
+  padding: 4rem;
+}
+
+.project-description {
+  align-self: center;
+  max-width: 40rem;
+}
+
+@media screen and (min-width:600px) {
+ .project {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3rem;
+
+  }
+
+  .project:nth-of-type(even) img {
+    grid-column: 2;
+    grid-row: 1
+  }
+
+  .project:nth-of-type(even) .project-description {
+    grid-column: 1;
+    grid-row: 1
+  }
+}
+
+.ios-img {
+  max-width: 16rem;
+}
+
+.macbook-img {
+  max-width: 40rem;
+  width:100%;
+
+}
+
+.project-wrapper h4 {
+  margin-bottom: 0;
+}
+
+.project-wrapper h2 {
+  margin: 1rem 0;
+}
+
+.project-wrapper p {
+  margin: 1rem 0 3rem;
+}
+
+.view-link {
+  color: #174556;
+  font-weight: 400;
+}
+
+.project:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  cursor: pointer;
+}
