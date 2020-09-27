@@ -6,8 +6,7 @@
 
     <!-- Font Awesome -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Lato:wght@300;400;700&family=Zilla+Slab:wght@300;400;600&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@600;700;900&family=Montserrat&display=swap" rel="stylesheet">
     <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -23,19 +22,20 @@
   </head>
   <body>
           <!-- topnav -->
-    <header>
-      <nav class="navbar">
-        <span class="navbar-toggle" id="js-navbar-toggle">
-          <i class="fa fa-bars"></i>
-        </span>
-        <a href="index.html" class="logo"><img src="images/homepage/logo.svg" alt="Logo" class="logo"></a>
-        <ul class="main-nav" id="js-menu">
-          <li><a href="index.html" class="nav-links">Work</a></li>
-          <li><a href="about.html" class="nav-links">About</a></li>
-          <li><a href="connect.html" class="nav-links current">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+          <header>
+             <a href="index.html" class="logo"><img src="images/homepage/logo.svg" alt="Logo" class="logo"></a>
+               <input type="checkbox" id="nav-toggle" class="nav-toggle">
+          <nav>
+             <ul class="nav-ul" id="nav-ul">
+               <li><a href="#work" class="current">Work</a></li>
+               <li><a href="about.html">About</a></li>
+               <li><a href="connect.html">Contact</a></li>
+             </ul>
+           </nav>
+           <label for="nav-toggle" class="nav-toggle-label">
+             <span></span>
+           </label>
+         </header>
 
     <div class="container">
 

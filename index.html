@@ -6,8 +6,7 @@
 
     <!-- Font Awesome -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Lato:wght@300;400;700&family=Zilla+Slab:wght@300;400;600&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@600;700;900&family=Montserrat&display=swap" rel="stylesheet">
     <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -24,51 +23,55 @@
 
   <body>
     <div class="hero-image">
-       <nav class="navbar">
-         <span class="navbar-toggle" id="js-navbar-toggle">
-           <i class="fa fa-bars"></i>
-         </span>
+      <header>
          <a href="#hero" class="logo"><img src="images/homepage/logo.svg" alt="Logo" class="logo"></a>
-         <ul class="main-nav" id="js-menu">
-           <li><a href="#work" class="nav-links current">Work</a></li>
-           <li><a href="about.html" class="nav-links">About</a></li>
-           <li><a href="connect.html" class="nav-links">Contact</a></li>
+           <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <nav>
+         <ul class="nav-ul" id="nav-ul">
+           <li><a href="#work" class="current">Work</a></li>
+           <li><a href="about.html">About</a></li>
+           <li><a href="connect.html">Contact</a></li>
          </ul>
        </nav>
+       <label for="nav-toggle" class="nav-toggle-label">
+         <span></span>
+       </label>
+     </header>
+
 
        <div class="content">
        <section class="hero-container">
          <h1>Hello, I'm Paulina!</h1>
-         <h6 class="subtitle">I'm a Product Designer based in Brooklyn, NY.</h6>
+         <h6 class="subtitle">I'm a UX/UI Designer based in Brooklyn, NY.</h6>
          <button class="btn" onclick="window.location.href = 'mailto:paulinisky@gmail.com';">Contact me to work together!</button>
          <a href="#work"><div class="arrow-down"><span></span></div></a>
        </section>
+     </div>
+   </div>
+
+
 
      <div class="background">
 
-       <a name="work">
+    <a name="work">
       <div class="project-wrapper">
         <div class="project">
-          <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/s960x960/96289788_10115462360367750_7120946027468685312_o.jpg?_nc_cat=103&_nc_sid=8024bb&_nc_ohc=x9M6Ihp95VoAX-962KG&_nc_ht=scontent-lga3-1.xx&_nc_tp=7&oh=8901f013db61e542570d72a8ed6471cc&oe=5EDF6E42" alt="" class="macbook-img">
+          <img src="images/seraph-case-study/finishing-touches/seraph-homepage-mockup.png" alt="" class="macbook-img">
           <div class="project-description">
             <h3>Seraph</h3>
             <p>UX Research, UX / UI Design & Branding</p>
-            <a href="project.html">
-              <p class="view-link">View Case Study ></p>
-            </a>
+            <a href="project.html">View Case Study</a>
           </div>
         </div>
 
-        <div class="project">
+        <!-- <div class="project">
           <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/s960x960/96289788_10115462360367750_7120946027468685312_o.jpg?_nc_cat=103&_nc_sid=8024bb&_nc_ohc=x9M6Ihp95VoAX-962KG&_nc_ht=scontent-lga3-1.xx&_nc_tp=7&oh=8901f013db61e542570d72a8ed6471cc&oe=5EDF6E42" alt="" class="macbook-img">
           <div class="project-description">
             <h3>Passion Florist</h3>
             <p>UX Research, UX / UI Design & Branding</p>
-            <a href="">
-              <p class="view-link">View Case Study ></p>
-            </a>
+            <a href="project.html">View Case Study</a>
           </div>
-        </div>
+        </div> -->
 
       </div>
 
@@ -102,8 +105,6 @@
          </footer>
      </div>
 
-   </div>
-  </div>
 
  </div>
 

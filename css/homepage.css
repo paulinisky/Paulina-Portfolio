@@ -1,7 +1,7 @@
 /* hero unit */
 
 .hero-image {
-  position: sticky;
+  /* position: sticky; */
   top: 0;
   background-image: linear-gradient(
       25deg,
@@ -118,11 +118,6 @@
 
 .project-wrapper p {
   margin: 1rem 0 3rem;
-}
-
-.view-link {
-  color: #174556;
-  font-weight: 400;
 }
 
 .project:hover {

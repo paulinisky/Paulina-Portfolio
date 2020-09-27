@@ -6,8 +6,7 @@
 
     <!-- Font Awesome -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Lato:wght@300;400;700&family=Zilla+Slab:wght@300;400;600&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@600;700;900&family=Montserrat&display=swap" rel="stylesheet">
     <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -17,10 +16,7 @@
     <link rel="stylesheet" href="css/header-footer.css">
     <link rel="stylesheet" href="css/project.css">
     <link rel="shortcut icon" type="img/svg" href="images/homepage/logo.svg">
-    <script src="topnav.js"></script>
 
-    <!-- <script src="backtotop.js"></script> -->
-    <script type="navbar.js"></script>
 
   </head>
   <body>
@@ -28,19 +24,24 @@
 
       <!-- topnav -->
       <header>
-        <nav class="navbar">
-          <span class="navbar-toggle" id="js-navbar-toggle">
-            <i class="fa fa-bars"></i>
-          </span>
-          <a href="index.html" class="logo"><img src="images/homepage/logo.svg" alt="Logo" class="logo"></a>
-          <ul class="main-nav" id="js-menu">
-            <li><a href="#work" class="nav-links current">Work</a></li>
-            <li><a href="about.html" class="nav-links">About</a></li>
-            <li><a href="connect.html" class="nav-links">Contact</a></li>
-          </ul>
-        </nav>
+         <a href="index.html" class="logo"><img src="images/homepage/logo.svg" alt="Logo" class="logo"></a>
+           <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <nav>
+         <ul class="nav-ul" id="nav-ul">
+           <li><a href="#work" class="current">Work</a></li>
+           <li><a href="about.html">About</a></li>
+           <li><a href="connect.html">Contact</a></li>
+         </ul>
+       </nav>
+       <label for="nav-toggle" class="nav-toggle-label">
+         <span></span>
+       </label>
+     </header>
 
-           <section class="intro chapter container">
+           <section class="chapter container">
+               <a class="gotopbtn" href="#"><i class="fa fa-arrow-up"></i></a>
+
+
              <h1 class="align-center">Seraph</h1>
              <h6 class="align-center">A secure, professional platform to store all your work</h6>
              <img class="responsive-img img-block" alt="Prototype Preview Image" src="images/seraph-case-study/dashboard.jpg">
@@ -132,14 +133,67 @@
                  </li>
                </ul>
              </div>
+
+
              <div class="flex-wrapper-intro padding_bottom-six sb">
                <div class="intro-text one">
+                 <br>
+                 <br>
+                 <h2 class="align-center intro">Overview</h2>
+                 <br>
+                 <br>
+                 <img class="icons" src="images/seraph-case-study/problem-img.svg">
+                 <br>
+                 <br>
                  <h4>Problem:</h4>
-                 <p>After taking the time listening to users about their difficulties with current cloud storage apps, I found that there are concerns with security, running out of storage space and navigating the user interface.</p>
-                 <h4 class="subtitle">Solution:</h4>
-                 <p>Seraph is a professional platform that allows users to store and access their work on the web easily and securely. The storage plans give users plenty of space for what they need to store on their cloud at the right price for their budget.</p>
-                 <h4 class="subtitle">Goals:</h4>
-                 <p>Seraph is a professional platform that allows users to store and access their work on the web easily and securely. The storage plans give users plenty of space for what they need to store on their cloud at the right price for their budget.</p>
+                 <br>
+                 <p>A hypothetical client desired to create an app to compete in the cloud storage market.
+                 I went about my research to understand user needs and the frustrations they were experiencing.
+                 Users expressed concerns with navigating the interface of current apps to quickly find and
+                 organize items. They also ranked security and storage space as high priorities when choosing their cloud storage
+                 apps.</p>
+                 <br>
+                 <br>
+                 <br>
+                 <br>
+                 <br>
+                 <img class="icons" src="images/seraph-case-study/goals-img.svg">
+                 <br>
+                 <br>
+                 <h4 class="">Goals:</h4>
+                 <br>
+                 <p>To meet the needs of both my client and the users I set out to:</p>
+                 <br>
+                 <ul class="">
+                     <br>
+                     <li class="numbered-list"><img src="images/seraph-case-study/ol-number1.svg" alt=""><p>Create a product with unique organization features</p></li>
+                     <br>
+                     <li class="numbered-list"><img src="images/seraph-case-study/ol-number2.svg" alt=""><p>Design an app with a clean and intuitive interface</p></li>
+                     <br>
+                     <li class="numbered-list"><img src="images/seraph-case-study/ol-number3.svg" alt=""><p>Instill a sense of trust and security in a new product</p></li>
+                 </ul>
+                 <br>
+                 <br>
+                 <br>
+                 <br>
+                 <br>
+                 <img class="icons" src="images/seraph-case-study/solution-img.svg">
+                 <br>
+                 <br>
+                 <h4 class="">Solution:</h4>
+                 <br>
+                 <p>By focusing on the needs of users and my client the final product was born - Seraph!</p>
+                 <br>
+                 <p>Seraph uses both friendly and professional branding elements to communicate safe keeping.</p>
+                 <br>
+                 <p>Seraph is a product that delievers to provide users with a central location
+                 to store all their work.</p>
+                 <br>
+                 <p>Users can find the features they use the most quickly on the
+                 main dashboard.</p>
+                 <br>
+                 <p>To optimize organization, Seraph offers color coding features to help users
+                 find their stored work easily.</p>
                </div>
                <img class="homepage two" src="images/seraph-case-study/homepage.png" alt="homepage">
              </div>
@@ -154,9 +208,8 @@
              <br>
              <h4 class="subtitle align-center">Survey Analysis</h4>
              <p class="project-text">I began by gathering feedback from users to learn what frustrations they were experiencing with their current cloud storage apps.</p>
-           </section>
-           <section>
-             <img class="survey-img" src="images/seraph-case-study/survey/survey-results.svg" alt="">
+             <img class="survey-img-mobile" alt="survey results" src="images/seraph-case-study/survey/survey-results-mobile.svg">
+             <img class="survey-img" src="images/seraph-case-study/survey/survey-results.svg" alt="survey results">
            </section>
 
 
@@ -172,51 +225,15 @@
 
              <div class="flex-wrapper sa padding_top-six">
                <div>
-                 <img class="comp-img one responsive-img" src="images/seraph-case-study/competition/drive.png">
-                 <ul>
-                   <li>
-                     1. New button can be more prominent
-                   </li>
-                   <li>
-                     2. Not an accessible color combination
-                   </li>
-                   <li>
-                     3. Dropdown menu task unclear
-                   </li>
-                 </ul>
+                 <img class="comp-img one responsive-img" src="images/seraph-case-study/competition/drive.svg">
                </div>
 
                <div>
-                 <img class="comp-img two responsive-img" src="images/seraph-case-study/competition/dropbox.png">
-                 <ul>
-                   <li>
-                     1. Storage usage unknown
-                   </li>
-                   <li>
-                     2. Left hand buttons difficult to find
-                   </li>
-                   <li>
-                     3. Too many steps to find deleted items
-                   </li>
-                   <li>
-                     4. Too many steps to share items
-                   </li>
-                 </ul>
+                 <img class="comp-img two responsive-img" src="images/seraph-case-study/competition/dropbox.svg">
                </div>
 
                <div>
-                 <img class="comp-img two responsive-img" src="images/seraph-case-study/competition/box.png">
-                 <ul>
-                   <li>
-                     1. Storage usage unknown
-                   </li>
-                   <li>
-                     2. Left hand buttons difficult to find
-                   </li>
-                   <li>
-                     3. Icon actions unclear
-                   </li>
-                 </ul>
+                 <img class="comp-img two responsive-img" src="images/seraph-case-study/competition/box.svg">
                </div>
 
              </div>
@@ -316,7 +333,7 @@
 
            <section class="sketching">
              <h4 class="subtitle align-center">Sketching it out</h4>
-             <p class="project-text align-center">I experimented between horizontal and vertical navigation menus with various layouts in my initial sketches.</p>
+             <p class="project-text">I experimented between horizontal and vertical navigation menus with various layouts in my initial sketches.</p>
              <div class="flex-wrapper padding_top-six sa">
                  <img class="img-sketch responsive-img" src="images/seraph-case-study/sketches/sketch.png">
              </div>
@@ -334,14 +351,16 @@
              <img class="wireframe-img three" src="images/seraph-case-study/wireframes/move-menu-wireframe.png">
              <img class="wireframe-img four" src="images/seraph-case-study/wireframes/modal-window-wireframe.png">
            </div>
-           <div class="container">
-                <h4 class="subtitle align-center">What I learned from testing</h4>
-					<p class="align-center">After testing it was apparent that I needed to make the following changes:</p>
-                <ol class="">
-                    <li class="">Move the new button to a more prominent location</li>
-                    <li class="">Place dropdown menus for files and folders next to its pertaining item</li>
-                    <li class="">Maximize space for user content by repositioning icons</li>
-                </ol>
+           <div class="container padding_top-six">
+					    <h4 class="align-center">Changes needed after first round of testing:</h4>
+                <ul class="">
+                    <br>
+                    <li class="numbered-list"><img src="images/seraph-case-study/ol-number1.svg" alt=""><p>Move the new button to a more prominent location</p></li>
+                    <br>
+                    <li class="numbered-list"><img src="images/seraph-case-study/ol-number2.svg" alt=""><p>Place dropdown menus for files and folders next to its pertaining item</p></li>
+                    <br>
+                    <li class="numbered-list"><img src="images/seraph-case-study/ol-number3.svg" alt=""><p>Maximize space for user content by repositioning icons</p></li>
+                </ul>
            </div>
 
 
@@ -403,18 +422,18 @@
              <h4 class="subtitle align-center">Asking the user</h4>
              <p class="project-text align-center">I recruited users to share their preferences to refine the product's visual design.</p>
              <div class="padding_top-six">
-               <div class="">
+               <div class="ptest1">
                  <div class="flex-wrapper-ptest">
-                   <img class="ptest-img img-block responsive-img" src="images/seraph-case-study/preference-test/ptest1.png">
-                   <img class="ptest-img img-block responsive-img" src="images/seraph-case-study/preference-test/ptest2.png">
+                   <img class="ptest-img img-block responsive-img one" src="images/seraph-case-study/preference-test/ptest1.png">
+                   <img class="ptest-img img-block responsive-img two" src="images/seraph-case-study/preference-test/ptest2.png">
                  </div>
                  <p class="project-text align-center">Users preferred a yellow CTA because the contrast makes it easier to locate.</p>
                </div>
 
-               <div class="">
+               <div class="ptest2">
                  <div class="flex-wrapper-ptest">
-                   <img class="ptest-img img-block responsive-img" src="images/seraph-case-study/preference-test/ptest3.png">
-                   <img class="ptest-img img-block responsive-img" src="images/seraph-case-study/preference-test/ptest4.png">
+                   <img class="ptest-img img-block responsive-img three" src="images/seraph-case-study/preference-test/ptest3.png">
+                   <img class="ptest-img img-block responsive-img four" src="images/seraph-case-study/preference-test/ptest4.png">
                  </div>
                  <p class="project-text align-center">Users preferred the rounded corners because they give the product a friendlier personality.</p>
                </div>
@@ -424,12 +443,23 @@
 
            <section class="padding_bottom-six">
              <h4 class="subtitle align-center">Gathering more feedback</h4>
-             <p class="project-text align-center">In my next iterations I added the branding elements and made CTAs and menus more prominent.</p>
+             <p class="project-text">In my next iterations I added the branding elements and made CTAs and menus more prominent.</p>
            <div class="flex-wrapper-four padding_top-six">
              <img class="wireframe-img one" src="images/seraph-case-study/second-round/new.png">
              <img class="wireframe-img two" src="images/seraph-case-study/second-round/move.png">
              <img class="wireframe-img three" src="images/seraph-case-study/second-round/modal.png">
              <img class="wireframe-img four" src="images/seraph-case-study/second-round/signout.png">
+           </div>
+           <div class="container padding_top-six">
+             <h4 class="align-center">Changes needed after second round of testing:</h4>
+                <ul class="">
+                    <br>
+                    <li class="numbered-list"><img src="images/seraph-case-study/ol-number1.svg" alt=""><p>Refine branding elements by adding contrast and softening corners</p></li>
+                    <br>
+                    <li class="numbered-list"><img src="images/seraph-case-study/ol-number2.svg" alt=""><p>Save vertical space to optimize user workspace</p></li>
+                    <br>
+                    <li class="numbered-list"><img src="images/seraph-case-study/ol-number3.svg" alt=""><p>Add empty state and darken modal backgrounds</p></li>
+                </ul>
            </div>
            </section>
 
@@ -439,38 +469,67 @@
 
 
 
-           <section class="final chapter padding_bottom-six">
+           <section class="final chapter padding_bottom-six container">
              <h2 class="align-center">Finishing Touches</h2>
              <br>
              <br>
              <h4 class="subtitle align-center">High Fidelity Mockup</h4>
              <p class="project-text">The final round of user testing and feedback from other designers guided me to make changes that would optimize the use of vertical space and improve the visual cues to clarify messages.</p>
-             <img class="img-block responsive-img padding_top-six" src="images/seraph-case-study/finishing-touches/hi-fi1.png">
-             <img class="img-block responsive-img padding_top-three" src="images/seraph-case-study/finishing-touches/hi-fi2.png">
-             <img class="img-block responsive-img padding_top-three" src="images/seraph-case-study/finishing-touches/hi-fi3.png">
-             <img class="img-block responsive-img padding_top-three" src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/s960x960/96215603_10115462360058370_1591941456602333184_o.jpg?_nc_cat=109&_nc_sid=8024bb&_nc_ohc=5OG6yOqRIyMAX_nWu-n&_nc_ht=scontent-lga3-1.xx&_nc_tp=7&oh=af1ce37490ee35889d9ad983c47d9b68&oe=5EDA377F">
-             <img class="img-block responsive-img padding_top-three" src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/s960x960/96215603_10115462360058370_1591941456602333184_o.jpg?_nc_cat=109&_nc_sid=8024bb&_nc_ohc=5OG6yOqRIyMAX_nWu-n&_nc_ht=scontent-lga3-1.xx&_nc_tp=7&oh=af1ce37490ee35889d9ad983c47d9b68&oe=5EDA377F">
-             <img class="img-block responsive-img padding_top-three" src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/s960x960/96215603_10115462360058370_1591941456602333184_o.jpg?_nc_cat=109&_nc_sid=8024bb&_nc_ohc=5OG6yOqRIyMAX_nWu-n&_nc_ht=scontent-lga3-1.xx&_nc_tp=7&oh=af1ce37490ee35889d9ad983c47d9b68&oe=5EDA377F">
+
+             <div class="carousel">
+               <button class="carousel__button carousel__button--left is-hidden" type="button" name="button">
+                 <i class="fa fa-chevron-left"></i>
+               </button>
+               <div class="carousel__track-container">
+                 <ul class="carousel__track">
+                   <li class="carousel__slide current-slide">
+                     <img class="carousel__image" src="images/seraph-case-study/finishing-touches/final-home-screen.png" alt="">
+                   </li>
+                   <li class="carousel__slide">
+                     <img class="carousel__image" src="images/seraph-case-study/finishing-touches/final-dropdown.png" alt="">
+                   </li>
+                   <li class="carousel__slide">
+                     <img class="carousel__image" src="images/seraph-case-study/finishing-touches/final-modal.png" alt="">
+                   </li>
+                 </ul>
+               </div>
+               <button class="carousel__button carousel__button--right" type="button" name="button">
+                 <i class="fa fa-chevron-right"></i>
+               </button>
+
+               <div class="carousel__nav">
+                 <button class="carousel__indicator current-slide" type="button" name="button"></button>
+                 <button class="carousel__indicator" type="button" name="button"></button>
+                 <button class="carousel__indicator" type="button" name="button"></button>
+               </div>
+             </div>
+
+             <script src="js/carousel.js" type="text/javascript">
+
+             </script>
+
 
            </section>
+
+
            <div class="background4">
 
            <section class="conclusion chapter container">
              <h2 class="align-center">Conclusion</h2>
              <br>
              <br>
-             <p class="project-text">The Seraph project went through several major changes in design throughout its development to discover which design would be most intuitive for users. Listening to individual users helped me realize the problems with cloud storage apps currently on the market which gave me direction to help solve those problems through Seraph’s design. This project taught me the importance of conducting several rounds of user testing and how to implement changes more efficiently with the tools that I was using.</p>
+             <p class="project-text">It felt so good to finish this project. I learned a lot about the design process
+             through the development of Seraph. I felt that it was challenging to come up with a new product
+             to compete in a market oversaturated with trusted products. I realized after gathering feedback from users
+             through surveys, interviews and testing that there is always something to improve upon and grab on to to help
+             a new competitor stand out. My interviews helped me realize that users had trouble finding and organizing
+             their files so I knew that Seraph had to have excellent organization features that were easy to use.</p>
              <div class="padding_top-six align-center">
                <button class="btn onclick="window.location.href = 'https://www.figma.com/proto/FteTwyDryAk8TOUAPIYXZr/Seraph-Finishing-Touches?node-id=114%3A0&scaling=min-zoom';"">View Prototype</button>
              </div>
 
            </section>
            </div>
-
-      <a class="top-link hide" href="" id="js-top">
-        <i class="fa fa-angle-up" style="font-size:36px"></i>
-        <span class="text">Back to top</span>
-      </a>
 
 
     <!-- bottomnav -->
@@ -499,6 +558,7 @@
         </footer>
     </div>
 
+    <script src="js/carousel.js"></script>
 
   </body>
 </html>
