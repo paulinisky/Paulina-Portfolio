@@ -48,7 +48,7 @@ prevButton.addEventListener('click', e => {
   moveToSlide(track, currentSlide, prevSlide);
   updateDots(currentDot, prevDot);
   hideShowArrows(slides, prevButton, nextButton, prevIndex);
-  
+
 });
 
 
