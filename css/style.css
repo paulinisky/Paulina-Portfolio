@@ -48,7 +48,8 @@ em {
 }
 
 .background {
-  background-color: #ebebeb;
+  background-color: #f7f7f7;
+  /* background-color: #ebebeb; */
 }
 
 .container {
@@ -72,7 +73,7 @@ em {
 }
 
 .btn:hover {
-  background-color: #555555;
+  background-color: #355869;
   color: #fff;
   transition: background-color 1s;
 }

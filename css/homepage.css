@@ -5,8 +5,8 @@
   top: 0;
   background-image: linear-gradient(
       25deg,
-      rgba(252, 252, 252, 0.1),
-      rgba(252, 252, 252, 0.3)
+      rgba(252, 252, 252, 0.6),
+      rgba(252, 252, 252, 1.5)
     ),
     url(../images/homepage/hero-image.jpg);
   background-position: center;
@@ -73,11 +73,18 @@
   display: grid;
   margin: 5rem 0 10rem;
   padding: 4rem;
+  border-radius: .5rem;
+
 }
 
 .project-description {
   align-self: center;
   max-width: 40rem;
+}
+
+a {
+  font-size: 1.6rem;
+  text-decoration: none;
 }
 
 @media screen and (min-width:600px) {

@@ -1,3 +1,19 @@
+.background-image {
+    /* position: sticky; */
+    top: 0;
+    background-image:
+    linear-gradient(
+        25deg,
+        rgba(252, 252, 252, .2),
+        rgba(252, 252, 252, 1)
+      ),
+      url(../images/homepage/about-me.jpg);
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    z-index: 0;
+  }
+
 h1 {
   padding-bottom: 6rem;
 }

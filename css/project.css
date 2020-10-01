@@ -2,6 +2,14 @@ html {
   scroll-behavior: smooth;
 }
 
+header {
+  background-color: white;
+  /* background-color: rgba(255, 255, 255, 0); */
+  /* position: fixed;
+  z-index: 999;
+  width: 100%; */
+}
+
 /* project main titles, subtitles and text */
 
 .chapter {
@@ -33,20 +41,40 @@ h6 {
 }
 
 .gotopbtn {
+  background: #fff;
+  border: 1px solid #2e2e2e;
   border-radius: 1.3rem;
   position: fixed;
   width: 5rem;
   height: 5rem;
-  background: black;
   bottom: 4rem;
   right: 5rem;
 
   text-decoration: none;
   text-align: center;
   line-height: 5rem;
-  color: white;
+  color: #2e2e2e;
   font-size: 2rem;
+  transition: all .25s ease-in-out;
 }
+
+
+.gotopbtn:hover {
+  background-color: #355869;
+  color: #fff;
+  transition: background-color 1s;
+}
+
+.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.hide {
+  visibility: hidden;
+  opacity: 0;
+}
+
 
 .project-text {
   padding-top: 2rem;
@@ -345,26 +373,8 @@ h6 {
   }
 }
 
-.hi-fi {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding-bottom: 4rem;
-  /* background: lightgreen; */
-}
 
-.hi-fi img {
-  max-width: 35rem;
-  min-width: 35rem;
-  /* border: .2px lightgrey solid; */
-  background: white;
-  border-radius: 4%;
-}
-
-.hi-fi img:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
-  cursor: pointer;
-}
+/* carousel */
 
 .carousel {
   position: relative;
@@ -444,3 +454,312 @@ h6 {
 .is-hidden {
   display: none;
 }
+
+/* carousel2 */
+
+.carousel2 {
+  position: relative;
+  height: 80vh;
+  width: 60vw;
+  margin: 0 auto;
+  /* margin-top: 8rem;
+  margin-bottom: 8rem; */
+}
+
+.carousel__image2 {
+  width: 100%;
+  /* height: 95%; */
+  /* object-fit: cover; */
+}
+
+.carousel__track-container2 {
+  background: lightgreen;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel__track2 {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  height: 100%;
+  transition: transform 250ms ease-in;
+}
+
+.carousel__slide2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.carousel__button2 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.carousel__button--left2 {
+  left: -40px;
+}
+
+.carousel__button--right2 {
+  right: -40px;
+}
+
+.carousel__nav2 {
+  /* background: pink; */
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.carousel__indicator2 {
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  background: rgba(0, 0, 0, 0.3);
+  margin: 0 12px;
+}
+
+.carousel__indicator2.current-slide2 {
+  background: rgba(0, 0, 0, .75)
+}
+
+.is-hidden2 {
+  display: none;
+}
+
+.media_gallery {
+		margin-top: 30px;
+		margin-bottom: 30px;
+
+		img {
+			display: block;
+			width: 100%;
+		}
+	}
+
+	.media_large {
+
+		a {
+			display: block;
+			margin: 0 0 2.5%;
+			text-decoration: none;
+		}
+
+		&.fs-carousel-enabled {
+			margin-bottom: 10px;
+
+			.fs-carousel-item {
+				position: relative;
+
+				margin: 0 10px 0 0;
+
+				&:after {
+					width: 100%;
+
+					background: #263238;
+					color: #fff;
+					content: attr(title);
+					display: block;
+					padding: 20px;
+
+					@media screen and (min-width: 740px) {
+						position: absolute;
+						bottom: 0;
+						left: 0;
+
+						background: fade(#263238, 90);
+						color: transparent;
+						transition:
+							color 0.25s linear 0s,
+							transform 0.25s ease 0s;
+						transform: translateY(100%);
+					}
+				}
+
+				&.fs-carousel-visible {
+
+					&:after {
+						color: #fff;
+						transform: translateY(0);
+						transition-delay: 0.35s;
+					}
+				}
+			}
+		}
+	}
+
+	.media_small {
+
+		&.fs-carousel-enabled {
+
+			.fs-carousel-item {
+				position: relative;
+
+				cursor: pointer;
+				margin: 0 10px 0 0;
+
+				&:after {
+					height: 100%;
+					width: 100%;
+
+					position: absolute;
+					top: 0;
+					left: 0;
+
+					background: fade(#00bcd4, 50);
+					border: 0 solid #00bcd4;
+					content: '';
+					opacity: 0;
+					transition:
+						border 0.25s linear,
+						opacity 0.25s linear;
+				}
+
+				&.fs-carousel-active {
+
+					&:after {
+						border-width: 5px;
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+
+
+
+  /* Position the image container (needed to position the left and right arrows) */
+  .gallery-container {
+    position: relative;
+    width: 75vw;
+    margin: 30px auto;
+    /* box-shadow: 0 0 15px black; */
+  }
+
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0 }
+    to { opacity: 1 }
+  }
+  /* Add this class to show the image*/
+  .show {
+    display: block;
+    animation: fadeIn .2s linear;
+  }
+
+  .mySlides img {
+    width: 100%;
+    padding: 0;
+    margin-bottom: -6px
+  }
+
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+
+  @keyframes fadeOut {
+    from { opacity: 1 }
+    to { opacity: 0 }
+  }
+
+  /* Number text (1/3 etc) */
+  .numbertext {
+    animation: fadeOut 3s linear;
+    opacity: 0;
+    font-family: 'Mansalva', cursive;
+    color: #f2f2f2;
+    font-size: 1rem;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+
+  }
+
+  /* Container for image text */
+  .caption-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    padding: 2px 0 0 0;
+    color: white;
+  }
+
+  #caption {
+    font-family: 'Muli', sans-serif;
+    font-size: 1.2rem;
+    margin: 0;
+  }
+
+  /* Next & previous arrow icons */
+  .prev,
+  .next {
+    cursor: pointer;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    transition: .3s all;
+  }
+
+  .next {
+    border-radius: 10px 0 0 10px;
+  }
+  .prev {
+    border-radius: 0 10px 10px 0;
+  }
+
+  /* On hover, add a black background color */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  /* Thumnbail images */
+  .row {
+    display: flex;
+    background-color: black;
+  }
+
+  .thumbnail {
+    width: 17%;
+  }
+
+  .thumbnail img {
+    width: 100%;
+    margin: 0;
+  }
+
+  /* Add a opaque effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+    transition: .5s;
+  }
+
+  .demo:hover {
+    opacity: 1;
+  }
+
+  .active {
+    opacity: 1;
+    transform: scale(.8);
+    transition: .3s;
+  }
