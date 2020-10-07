@@ -11,71 +11,57 @@ header {
 /* input checkbox not visible */
 
 .nav-toggle {
-  position: absolute !important;
-  top: -9999px !important;
-  left: -9999px !important;
-  transform: translateX(-100%);
+  display: none;
 }
-
-/* .nav-toggle:focus ~ .nav-toggle-label {
-  outline: 3px solid
-  rgba(lightblue, .75);
-} */
 
 /* three lines visible */
 
-.nav-toggle-label {
+label {
   position: absolute;
-  top: 0;
+  top: 2rem;
   right: 0;
   margin-right: 2em;
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.nav-toggle-label span,
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
-  display: block;
-  background: black;
+  cursor: pointer;
   height: 2px;
   width: 2.2em;
-  border-radius: 2px;
-  position: relative;
-}
-
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
-  content: '';
-  position: absolute;
+  background-color: #333333;
   transition: all 0.6s cubic-bezier(1,0,0,1);
 }
 
-.nav-toggle-label span::before {
-  bottom: 7px;
-  transform-origin: left top;
-  transform: rotateZ(0deg);
+  label::before,
+  label::after {
+    content: '';
+    transition: all 0.6s cubic-bezier(1,0,0,1);
+    height: 2px;
+    width: 2.2em;
+    background-color: #333333;
+    position: absolute;
+    display: block;
+  }
+
+  /* hamburger animation start */
+
+  label::before {
+    bottom: 7px;
+    transform-origin: left top;
+    transform: rotateZ(0deg);
+  }
+
+  label::after {
+    top: 7px;
+    transform-origin: left bottom;
+    transform: rotateZ(0deg);
+  }
+
+#nav-toggle:checked ~ label {
+  background-color: rgba(255, 255, 255, 0);
 }
 
-.nav-toggle-label span::after {
-  top: 7px;
-  transform-origin: left bottom;
-  transform: rotateZ(0deg);
-
-}
-
-/* hamburger animation start */
-
-/* #nav-toggle:checked ~ .nav-toggle-label span {
-  opacity: 0.0;
-} */
-
-#nav-toggle:checked ~ .nav-toggle-label span::before {
+#nav-toggle:checked ~ label::before {
   transform: rotateZ(41deg);
 }
 
-#nav-toggle:checked ~ .nav-toggle-label span::after {
+#nav-toggle:checked ~ label::after {
   transform: rotateZ(-41deg);
 }
 
@@ -99,7 +85,7 @@ nav {
   text-align: center;
   top: 100%;
   left: 0;
-  background: rgba(255, 255, 255, 1);
+  background: #fff;
   width: 100%;
   transform: scale(1, 0);
   transform-origin: top;
@@ -137,7 +123,7 @@ nav a:hover {
 /* desktop and tablet styles start */
 
 @media screen and (min-width: 768px) {
-  .nav-toggle-label {
+  label {
     display: none;
   }
 
@@ -245,7 +231,7 @@ nav a:hover {
   padding: 2rem 0rem 4rem 0rem;
 }
 
-.fa-4x {
+.square {
   color: #fff;
   font-size: 4rem;
   margin: 0rem 1rem;

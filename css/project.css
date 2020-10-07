@@ -4,10 +4,6 @@ html {
 
 header {
   background-color: white;
-  /* background-color: rgba(255, 255, 255, 0); */
-  /* position: fixed;
-  z-index: 999;
-  width: 100%; */
 }
 /* The progress container (grey background) */
 
@@ -20,13 +16,13 @@ header {
   background-color: #f1f1f1;
 }
 
+/* The progress bar (scroll indicator) */
+
 .progress-container {
   width: 100%;
   height: 55.5px;
   background: #fff;
 }
-
-/* The progress bar (scroll indicator) */
 .progress-bar {
   height: 55.5px;
   background: #355869;
@@ -63,40 +59,44 @@ h6 {
 
 }
 
-.gotopbtn {
-  background: #fff;
-  border: 1px solid #2e2e2e;
-  border-radius: 1.3rem;
+/* back to top button start */
+
+.top-link {
+  transition: all .25s ease-in-out;
   position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  border-radius: 1.3rem;
   width: 5rem;
   height: 5rem;
-  bottom: 4rem;
-  right: 5rem;
-
-  text-decoration: none;
-  text-align: center;
   line-height: 5rem;
   color: #2e2e2e;
   font-size: 2rem;
-  transition: all .25s ease-in-out;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #2e2e2e;
 }
 
-
-.gotopbtn:hover {
+.top-link:hover {
   background-color: #355869;
   color: #fff;
   transition: background-color 1s;
+
 }
 
-.show {
-  visibility: visible;
-  opacity: 1;
-}
+  .show {
+    visibility: visible;
+    opacity: 1;
+  }
 
-.hide {
-  visibility: hidden;
-  opacity: 0;
-}
+  .hide {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+
+/* back to top button end */
 
 
 .project-text {

@@ -23,8 +23,13 @@
 
       <!-- topnav -->
       <header>
-         <a href="index.html" class="logo"><img src="images/homepage/logo.svg" alt="Logo" class="logo"></a>
-           <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <a href="index.html" class="logo"><img src="images/homepage/logo.svg" alt="Logo" class="logo"></a>
+     <!-- mobile hamburger menu start -->
+          <input type="checkbox" id="nav-toggle" class="nav-toggle">
+          <label for="nav-toggle">
+          </label>
+    <!-- mobile hamburger menu end -->
+
       <nav>
          <ul class="nav-ul" id="nav-ul">
            <li><a href="index.html" class="current">Work</a></li>
@@ -32,20 +37,27 @@
            <li><a href="connect.html">Contact</a></li>
          </ul>
        </nav>
-       <label for="nav-toggle" class="nav-toggle-label">
-         <span></span>
-       </label>
+
      </header>
 
      <div class="header">
+
+       <!-- progress bar start -->
        <div class="progress-container">
          <div class="progress-bar" id="myBar"></div>
        </div>
+       <!-- progress bar end -->
+
      </div>
 
            <section class="chapter container">
-               <a class="gotopbtn hide" href="#" id="js-top"><i class="fa fa-chevron-up"></i></a>
 
+             <!-- back to top button start -->
+               <a class="top-link hide" href="#" id="js-top">
+                 <i class="fa fa-chevron-up"></i>
+               <!-- <span class="screen-reader-text">Back to top</span> -->
+               </a>
+             <!-- back to top button end -->
 
              <h1 class="align-center">Seraph</h1>
              <h6 class="align-center">A professional platform to keep your work organized and secure.</h6>
@@ -641,17 +653,17 @@
           <ul class="bottom-nav">
             <li class="connect">
               <a href="https://www.linkedin.com/in/martinez-paulina/">
-                <i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i>
+                <i class="fa fa-linkedin-square square" aria-hidden="true"></i>
               </a>
             </li>
             <li class="connect">
               <a href="https://github.com/paulinisky">
-                <i class="fa fa-github-square fa-4x" aria-hidden="true"></i>
+                <i class="fa fa-github-square square" aria-hidden="true"></i>
               </a>
             </li>
             <li class="connect">
               <a href="mailto:paulinisky@gmail.com">
-                <i class="fa fa-envelope-square fa-4x" aria-hidden="true"></i>
+                <i class="fa fa-envelope-square square" aria-hidden="true"></i>
               </a>
             </li>
           </ul>
