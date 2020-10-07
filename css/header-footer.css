@@ -6,16 +6,23 @@ header {
   width: 100%;
 }
 
+/* hamburger styles start */
+
+/* input checkbox not visible */
+
 .nav-toggle {
   position: absolute !important;
   top: -9999px !important;
   left: -9999px !important;
+  transform: translateX(-100%);
 }
 
-.nav-toggle:focus ~ .nav-toggle-label {
+/* .nav-toggle:focus ~ .nav-toggle-label {
   outline: 3px solid
   rgba(lightblue, .75);
-}
+} */
+
+/* three lines visible */
 
 .nav-toggle-label {
   position: absolute;
@@ -33,7 +40,7 @@ header {
   display: block;
   background: black;
   height: 2px;
-  width: 2em;
+  width: 2.2em;
   border-radius: 2px;
   position: relative;
 }
@@ -42,15 +49,50 @@ header {
 .nav-toggle-label span::after {
   content: '';
   position: absolute;
+  transition: all 0.6s cubic-bezier(1,0,0,1);
 }
 
 .nav-toggle-label span::before {
   bottom: 7px;
+  transform-origin: left top;
+  transform: rotateZ(0deg);
 }
 
 .nav-toggle-label span::after {
   top: 7px;
+  transform-origin: left bottom;
+  transform: rotateZ(0deg);
+
 }
+
+/* hamburger animation start */
+
+/* #nav-toggle:checked ~ .nav-toggle-label span {
+  opacity: 0.0;
+} */
+
+#nav-toggle:checked ~ .nav-toggle-label span::before {
+  transform: rotateZ(41deg);
+}
+
+#nav-toggle:checked ~ .nav-toggle-label span::after {
+  transform: rotateZ(-41deg);
+}
+
+.nav-toggle:checked ~ nav {
+  transform: scale(1,1);
+}
+
+.nav-toggle:checked ~ nav a {
+  opacity: 1;
+  transition: opacity 250ms ease-in-out 250ms;
+}
+
+/* hamburger animation end */
+
+/* hamburger style end */
+
+/* global navigation styles start */
 
 nav {
   position: absolute;
@@ -80,15 +122,6 @@ nav a:hover {
   font-weight: bold;
 }
 
-.nav-toggle:checked ~ nav {
-  transform: scale(1,1);
-}
-
-.nav-toggle:checked ~ nav a {
-  opacity: 1;
-  transition: opacity 250ms ease-in-out 250ms;
-}
-
 .logo {
   height: 4.293rem;
   width: 3.3rem;
@@ -98,29 +131,10 @@ nav a:hover {
   align-items: center;
 }
 
-/* The progress container (grey background) */
+/* global navigation styles end */
 
-.header {
-  position: fixed;
-  top: 0;
-  z-index: 1;
-  width: 100%;
-  height: 55px;
-  background-color: #f1f1f1;
-}
 
-.progress-container {
-  width: 100%;
-  height: 55.5px;
-  background: #fff;
-}
-
-/* The progress bar (scroll indicator) */
-.progress-bar {
-  height: 55.5px;
-  background: #355869;
-  width: 0%;
-}
+/* desktop and tablet styles start */
 
 @media screen and (min-width: 768px) {
   .nav-toggle-label {
@@ -182,14 +196,30 @@ nav a:hover {
   }
    }
 
+ /* desktop and tablet styles end */
+
+
+/* mobile styles start */
+
 @media screen and (max-width: 768px) {
  .logo {
    margin-top: .5rem;
    margin-left: 1rem;
   }
+
+  nav {
+    height: 100vh;
+  }
+
+  nav li {
+    margin-top: 5em;
+  }
 }
 
-/* footer */
+/* mobile styles start */
+
+
+/* footer styles start*/
 
 .background2 {
   background-color: #555459;
@@ -220,3 +250,5 @@ nav a:hover {
   font-size: 4rem;
   margin: 0rem 1rem;
 }
+
+/* footer styles end */

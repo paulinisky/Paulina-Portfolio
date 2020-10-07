@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="css/header-footer.css">
     <link rel="stylesheet" href="css/homepage.css">
     <link rel="shortcut icon" type="img/svg" href="images/homepage/logo.svg">
-    <script src="topnav.js"></script>
 
   </head>
 
@@ -27,8 +26,13 @@
       <!-- navigation bar -->
       <header>
          <a href="#hero" class="logo"><img src="images/homepage/logo.svg" alt="Logo" class="logo"></a>
-      <!-- mobile hamburger menu -->
+      <!-- mobile hamburger menu start -->
            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+           <label for="nav-toggle" class="nav-toggle-label">
+             <span></span>
+           </label>
+     <!-- mobile hamburger menu end -->
+
        <nav>
          <ul class="nav-ul" id="nav-ul">
            <li><a href="#work" class="current">Work</a></li>
@@ -36,9 +40,7 @@
            <li><a href="connect.html">Contact</a></li>
          </ul>
        </nav>
-       <label for="nav-toggle" class="nav-toggle-label">
-         <span></span>
-       </label>
+
 
      </header>
      <!-- end of navigation bar -->
