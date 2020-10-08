@@ -323,6 +323,15 @@ h6 {
   .carousel-mobile {
     width: 100%;
   }
+
+  .carousel2 {
+    position: relative;
+    height: 39vh;
+    width: 80vw;
+    margin: 0 auto;
+    /* margin-top: 8rem;
+    margin-bottom: 8rem; */
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -346,11 +355,6 @@ h6 {
   .survey-img-mobile {
     display: none;
   }
-
-  /* .comp-img {
-  width: 328px;
-  height: auto;
-  } */
 
   .persona-two {
       border-left: 1px solid;
@@ -394,10 +398,19 @@ h6 {
   .carousel-mobile {
     display: none;
   }
+
+  .carousel2 {
+    position: relative;
+    height: 80vh;
+    width: 60vw;
+    margin: 0 auto;
+    /* margin-top: 8rem;
+    margin-bottom: 8rem; */
+  }
 }
 
 
-/* carousel */
+/* lo-fi prototype carousel styles start*/
 
 .carousel {
   position: relative;
@@ -478,16 +491,12 @@ h6 {
   display: none;
 }
 
-/* carousel2 */
+/* lo-fi prototype carousel styles ends*/
 
-.carousel2 {
-  position: relative;
-  height: 80vh;
-  width: 60vw;
-  margin: 0 auto;
-  /* margin-top: 8rem;
-  margin-bottom: 8rem; */
-}
+
+/* second prototype carousel2 starts */
+
+
 
 .carousel__image2 {
   width: 100%;

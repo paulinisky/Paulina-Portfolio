@@ -104,9 +104,20 @@ nav a {
   transition: opacity 150ms ease-in-out;
 }
 
+/* change states styles */
 nav a:hover {
   font-weight: bold;
+  border-top: 2px solid #355869;
+  padding-top: 5px;
 }
+
+.current {
+  font-weight: bold;
+  border-top: 2px solid #355869;
+  padding-top: 5px;
+}
+
+/* end change states styles */
 
 .logo {
   height: 4.293rem;
@@ -116,6 +127,8 @@ nav a:hover {
   display: flex;
   align-items: center;
 }
+
+
 
 /* global navigation styles end */
 
@@ -162,23 +175,6 @@ nav a:hover {
   nav a {
     opacity: 1;
     position: relative;
-  }
-
-  nav a::before {
-    content: '';
-    display: block;
-    height: 2.5px;
-    background: #355869;
-    position: absolute;
-    top: -.75em;
-    left: 0;
-    right: 0;
-    transform: scale(0, 1);
-    transition: transform ease-in-out 250ms;
-  }
-
-  nav a:hover::before {
-    transform: scale(1,1);
   }
    }
 
