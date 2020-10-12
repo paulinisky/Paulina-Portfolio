@@ -107,13 +107,13 @@ nav a {
 /* change states styles */
 nav a:hover {
   font-weight: bold;
-  border-top: 2px solid #355869;
+  border-top: .5rem solid #355869;
   padding-top: 5px;
 }
 
 .current {
   font-weight: bold;
-  border-top: 2px solid #355869;
+  border-top: .5rem solid #355869;
   padding-top: 5px;
 }
 

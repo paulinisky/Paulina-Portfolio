@@ -1,17 +1,8 @@
 /* hero unit */
 
 .hero-image {
-  /* position: sticky; */
-  top: 0;
-  background-image: linear-gradient(
-      25deg,
-      rgba(252, 252, 252, 0.6),
-      rgba(252, 252, 252, 1.5)
-    ),
-    url(../images/homepage/hero-image.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #FAACA8;
+  background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
   z-index: 0;
 }
 
@@ -28,31 +19,7 @@
   margin: 0 auto;
   padding-top: 10rem;
   text-align: center;
-  width: 95%;
-}
-
-.arrow-down {
-  margin: 0 auto;
-  padding-top: 10rem;
-  text-align: center;
-  width: 100%;
-}
-
-.arrow-down::after {
-  border-right: 5px solid #2e2e2e;
-  border-bottom: 5px solid #2e2e2e;
-  content: "";
-  cursor: pointer;
-  height: 20px;
-  margin: 43rem auto 22.8rem auto;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-  width: 20px;
+  width: 70%;
 }
 
 /* work section */
