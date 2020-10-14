@@ -102,11 +102,11 @@ nav a {
 }
 
 /* change states styles */
-nav a:hover {
+/* nav a:hover {
   font-weight: bold;
   border-top: .2rem solid #4158D0;
   padding-top: 5px;
-}
+} */
 
 .current {
   font-weight: bold;
@@ -117,12 +117,20 @@ nav a:hover {
 /* end change states styles */
 
 .logo {
-  height: 4.293rem;
-  width: 3.3rem;
+  /* height: 4.293rem; */
+  width: 2.5rem;
+  /* width: 3.3rem; */
   height: 100%;
   margin-bottom: .5rem;
+  margin-top: .25rem;
+
   display: flex;
   align-items: center;
+}
+
+.logo:hover {
+  border-top: 0;
+  padding-top: 0;
 }
 
 
@@ -195,7 +203,7 @@ nav a:hover {
   }
 }
 
-/* mobile styles start */
+/* mobile styles end */
 
 
 /* footer styles start*/

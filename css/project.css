@@ -3,7 +3,7 @@ html {
 }
 
 header {
-  background-color: white;
+  background-color: #fff;
 }
 /* The progress container (grey background) */
 
@@ -13,18 +13,17 @@ header {
   z-index: 1;
   width: 100%;
   height: 55px;
-  background-color: #f1f1f1;
 }
 
 /* The progress bar (scroll indicator) */
 
 .progress-container {
   width: 100%;
-  height: 55.5px;
-  background: #fff;
+  height: 40px;
 }
+
 .progress-bar {
-  height: 60px;
+  height: 50px;
   background-color: #4158D0;
   background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 50%, #ffffff 100%);
   /* background: #355869; */
@@ -71,8 +70,7 @@ h6 {
   color: #fff;
   font-size: 2rem;
   text-align: center;
-  background-color: #2D43B4;
-  /* border: 1px solid #2e2e2e; */
+  background-color: #4158D0;
 }
 
 .top-link:hover {
@@ -80,6 +78,8 @@ h6 {
   color: #fff;
   transition: background-color 1s;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  border-top: 0;
+  padding-top: 0;
 }
 
   .show {
@@ -120,7 +120,6 @@ h6 {
 }
 
 .first ul {
-  /* font-family: 'Lato'; */
   font-size: 1.6rem;
   font-weight: 300;
   line-height: 1.6;
