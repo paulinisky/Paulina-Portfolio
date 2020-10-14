@@ -11,15 +11,6 @@ p {
   line-height: 3rem;
 }
 
-.alink {
-  text-decoration: none;
-  border-bottom: .5rem solid #ebc0cc;
-}
-
-.alink:hover {
-  background: #ebc0cc;
-}
-
 .me-pic {
   text-align: center;
 }

@@ -25,7 +25,9 @@ header {
 }
 .progress-bar {
   height: 60px;
-  background: #355869;
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 50%, #ffffff 100%);
+  /* background: #355869; */
   width: 0%;
 }
 
@@ -66,18 +68,18 @@ h6 {
   width: 5rem;
   height: 5rem;
   line-height: 5rem;
-  color: #2e2e2e;
+  color: #fff;
   font-size: 2rem;
   text-align: center;
-  background-color: #fff;
-  border: 1px solid #2e2e2e;
+  background-color: #2D43B4;
+  /* border: 1px solid #2e2e2e; */
 }
 
 .top-link:hover {
-  background-color: #355869;
+  background-color: #2D43B4;
   color: #fff;
   transition: background-color 1s;
-
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
   .show {
@@ -427,7 +429,7 @@ h6 {
 }
 
 .carousel__track-container {
-  background: lightgreen;
+  /* background: lightgreen; */
   height: 100%;
   position: relative;
   overflow: hidden;
@@ -504,7 +506,7 @@ h6 {
 }
 
 .carousel__track-container2 {
-  background: lightgreen;
+  /* background: lightgreen; */
   height: 100%;
   position: relative;
   overflow: hidden;

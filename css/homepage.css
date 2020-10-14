@@ -1,8 +1,8 @@
 /* hero unit */
 
 .hero-image {
-  background-color: #FAACA8;
-  background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
+  background-color: #4158D0;
+  background-image: linear-gradient(30deg, #4158D0 0%, #C850C0 15%, #F3D8F3 40%, #ffffff 100%);
   z-index: 0;
 }
 

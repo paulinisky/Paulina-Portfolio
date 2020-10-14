@@ -1,6 +1,5 @@
 header {
-  /* background-color: white; */
-  /* background-color: rgba(255, 255, 255, 0.3); */
+
   position: fixed;
   z-index: 998;
   width: 100%;
@@ -98,8 +97,6 @@ nav li {
 }
 
 nav a {
-  text-decoration: none;
-  text-transform: uppercase;
   opacity: 0;
   transition: opacity 150ms ease-in-out;
 }
@@ -107,13 +104,13 @@ nav a {
 /* change states styles */
 nav a:hover {
   font-weight: bold;
-  border-top: .5rem solid #355869;
+  border-top: .2rem solid #4158D0;
   padding-top: 5px;
 }
 
 .current {
   font-weight: bold;
-  border-top: .5rem solid #355869;
+  border-top: .2rem solid #4158D0;
   padding-top: 5px;
 }
 
@@ -214,8 +211,9 @@ nav a:hover {
 .line1,
 .line2 {
   color: #fff;
-  font-size: 2rem;
-  font-weight: 400;
+  letter-spacing: 2px;
+  /* font-size: 2rem;
+  font-weight: 400; */
   padding-bottom: 2rem;
   text-align: center;
 }
