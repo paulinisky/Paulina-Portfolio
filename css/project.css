@@ -26,7 +26,6 @@ header {
   height: 50px;
   background-color: #4158D0;
   background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 50%, #ffffff 100%);
-  /* background: #355869; */
   width: 0%;
 }
 
@@ -166,16 +165,16 @@ h6 {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  /* background: lightblue; */
 }
 
-.flex-wrapper-ptest {
-  display: flex;
+.ptest-img-1  {
+  max-width: 100%;
 }
 
-.ptest1 p {
-  border-bottom: 1px solid;
-  padding-bottom: 2rem;
+.ptest-img-2 {
+  display: block;
+  max-width: 60%;
+  margin: 0 auto;
 }
 
 .sa {
@@ -199,8 +198,36 @@ h6 {
 .img_width-eighty {
   max-width: 80%;
 }
+/* competitive-analysis flex containers start */
 
-/* persona flex containers */
+.competitive-analysis-details {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  border-radius: .5rem;
+  padding: 2rem;
+}
+
+.competitor-three {
+  margin-top: 3rem;
+}
+
+.comp-list {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+.comp-list li {
+  padding: 1.6rem 5rem;
+}
+
+/* competitive-analysis flex containers end */
+
+/* persona flex containers start */
+
+.personas-wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
 
 .img-persona {
   width: 200px;
@@ -215,30 +242,34 @@ h6 {
 
 .persona-details {
   flex-direction: column;
-  align-items: center;
-  flex-basis: 50%;
+  flex-basis: 40%;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  border-radius: .5rem;
+  padding: 2rem;
 }
 
 .persona-details ul {
-  font-family: "Lato";
   font-size: 1.8rem;
   font-weight: 300;
   line-height: 3rem;
 }
 
-.numbered-list {
-  display: flex;
-  margin: 0 auto;
-  max-width: 70rem;
-}
+/* persona flex containers end */
 
-.numbered-list img {
-  padding-right: 1rem;
+
+.reflections-wrapper {
+  background-color: #F3D8F3;
+  background-image: linear-gradient(180deg, #F3D8F3 0%, #f9edfa 40%, #ffffff 100%);
+  border-radius: .5rem;
+  padding: 2rem;
+  max-width: 60%;
+  margin: 10rem auto 0 auto;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 @media screen and (max-width: 768px) {
   .progress-bar {
-    height: 55.5px;
+    height: 4.5rem;
   }
 
   .subtitle {
@@ -258,8 +289,8 @@ h6 {
     flex-direction: column;
   }
 
-  .flex-wrapper-ptest {
-    flex-wrap: wrap;
+  .reflections-wrapper {
+    max-width: 90%;
   }
 
   .list {
@@ -282,13 +313,16 @@ h6 {
   width: 98%;
   }
 
-  .persona-one {
-    padding-bottom: 3rem;
+  .persona-details {
+    flex-basis: 90%;
+  }
+
+  .competitor-two {
+    margin-top: 3rem;
   }
 
   .persona-two {
-      border-top: 1px solid;
-      padding-top: 3rem;
+    margin-top: 3rem;
   }
 
   .wireframe-img {
@@ -314,6 +348,10 @@ h6 {
 
   .logo-img {
     width: 98%;
+  }
+
+  .ptest-img-2 {
+    max-width: 80%;
   }
 
   .carousel {
@@ -354,11 +392,6 @@ h6 {
 
   .survey-img-mobile {
     display: none;
-  }
-
-  .persona-two {
-      border-left: 1px solid;
-      padding-left: 3rem;
   }
 
   .img-sketch {

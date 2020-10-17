@@ -20,6 +20,7 @@ html {
 
 
 h1 {
+  /* font-family: 'Playfair Display', serif; */
   font-family: 'sofia', sans-serif;
   /* font-family: 'riffic-bold', sans-serif; */
 }
@@ -43,14 +44,22 @@ h1 {
 h4, h6 {
   font-weight: 500;
   line-height: 1.6;
+}
 
+p {
+  line-height: 1.6;
+  font-size: 1.8rem;
 
 }
 
 p {
   font-weight: 400;
-  line-height: 1.6;
 }
+
+/* li {
+  font-weight: 300;
+
+} */
 
 h5 {
   font-weight: 400;
@@ -59,7 +68,6 @@ h5 {
 a {
   font-size: 1.8rem;
   font-family: 'Poppins', sans-serif;
-  /* font-family: 'Roboto', sans-serif; */
   font-weight: 400;
   color: #4158D0;
   text-decoration: none;
