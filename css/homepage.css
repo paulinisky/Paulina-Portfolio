@@ -63,21 +63,25 @@ header {
 .arrow-down-wrapper {
   grid-column: 3 / 4;
   grid-row: 2 / 2;
-  place-self: center;
+  /* place-self: center; */
+  justify-self: stretch;
 }
 
 .hero-image {
   grid-column: 4 / 4;
   grid-row-start: 1;
   grid-row-end: span 2;
-  background-image: url(../images/homepage/hero-image.svg);
+  place-self: end;
+  /* background-image: url(../images/homepage/hero-image.svg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
 }
 
-/* .headshot {
-  width: 50%;
-} */
+.headshot {
+  /* padding-top: 2rem; */
+  width: 40rem;
+  height: auto;
+}
 
 /* .link-down {
   width: 180px;
