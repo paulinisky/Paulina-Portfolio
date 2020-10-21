@@ -43,6 +43,13 @@ header {
   background-color: #f7f7f7;
 }
 
+h3 {
+  margin: 0 auto;
+  max-width: 84rem;
+  /* padding-top: 3rem; */
+  padding-bottom: 6rem;
+}
+
 h6 {
   padding-top: 2rem;
 }
@@ -159,7 +166,6 @@ h6 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  /* align-items: center; */
 }
 
 .flex-wrapper-logo {
@@ -199,6 +205,29 @@ h6 {
 .img_width-eighty {
   max-width: 80%;
 }
+
+/* survey-analysis container starts */
+.survey-analysis-details {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  border-radius: .5rem;
+  padding: 2rem 2rem 0rem 2rem;
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+
+
+.survey-analysis-details h3, .survey-analysis-details p {
+  padding-bottom: 2rem;
+}
+
+.survey-analysis-details h3, b {
+  color: #7955C9;
+  }
+
+/* survey-analysis container ends */
+
+
 /* competitive-analysis flex containers start */
 
 .competitive-analysis-details {
@@ -357,8 +386,8 @@ h6 {
   }
 
   .carousel__track-container {
-    height: 55%;
-    /* background: lightgreen; */
+    height: 25vh;
+    background: lightgreen;
   }
 
   .carousel__track-container2 {
@@ -401,7 +430,7 @@ h6 {
   }
 
   .img-sketch {
-      width: 40rem;
+      width: 55rem;
       height: auto;
   }
 
@@ -435,8 +464,8 @@ h6 {
   }
 
   .carousel__track-container {
-    /* background: lightgreen; */
-    height: 100%;
+    background: lightgreen;
+    height: 65vh;
   }
 
   .carousel2 {
@@ -464,8 +493,8 @@ h6 {
 
 .carousel__image {
   width: 100%;
-  /* height: 95%; */
-  /* object-fit: cover; */
+  /* height: auto; */
+  object-fit: cover;
 }
 
 .carousel__track-container {
@@ -491,7 +520,7 @@ h6 {
 
 .carousel__button {
   position: absolute;
-  top: 50%;
+  top: 40%;
   transform: translateY(-50%);
   background: transparent;
   border: 0;

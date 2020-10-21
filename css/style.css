@@ -20,25 +20,20 @@ html {
 
 
 h1 {
-  /* font-family: 'Playfair Display', serif; */
   font-family: 'sofia', sans-serif;
-  /* font-family: 'riffic-bold', sans-serif; */
 }
 
-h2, h3 {
+
+h2, h3, h4, h5, h6, a, p, li, ol, button {
   font-family: 'Poppins', sans-serif;
-
-  /* font-family: 'Playfair Display', serif; */
-  font-weight: 500;
 }
 
-h4, h5, h6, p, li, ol, button {
-  font-family: 'Poppins', sans-serif;
-/* font-family: 'Roboto', sans-serif; */
+h2 {
+  font-weight: 700;
 }
 
-h1 {
-  font-weight: 900;
+h3 {
+  font-weight: 600;
 }
 
 h4, h6 {
@@ -46,20 +41,12 @@ h4, h6 {
   line-height: 1.6;
 }
 
+
 p {
   line-height: 1.6;
   font-size: 1.8rem;
-
-}
-
-p {
   font-weight: 400;
 }
-
-/* li {
-  font-weight: 300;
-
-} */
 
 h5 {
   font-weight: 400;
@@ -67,7 +54,6 @@ h5 {
 
 a {
   font-size: 1.8rem;
-  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   color: #4158D0;
   text-decoration: none;
@@ -91,7 +77,6 @@ em {
 
 .background {
   background-color: #f7f7f7;
-  /* background-color: #ebebeb; */
 }
 
 .container {
@@ -101,13 +86,10 @@ em {
 
 .btn {
   background-color: #4158D0;
-  /* background-color: #C5496E; */
   color: #fff;
   border: none;
   border-radius: 2rem;
   cursor: pointer;
-  font-family: 'Poppins', sans-serif;
-  /* font-family: 'Roboto', sans-serif; */
   padding: 1rem 5rem;
   align-self: center;
 }
@@ -128,7 +110,6 @@ em {
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 6rem;
-    /* font-size: 3.6rem; */
   }
 
   h2 {
@@ -169,9 +150,7 @@ em {
 @media screen and (min-width: 768px) {
 
   h1 {
-    /* font-size: 13rem; */
     font-size: 10rem;
-    /* font-size: 6.4rem; */
     letter-spacing: .25rem;
   }
 
@@ -179,12 +158,8 @@ em {
     font-size: 4.8rem;
   }
 
-  h3 {
-    font-size: 3.6rem;
-  }
-
-  h4 {
-    font-size: 3.6rem;
+  h3, h4 {
+    font-size: 3rem;
   }
 
   h5 {
