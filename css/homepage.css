@@ -7,7 +7,7 @@ header {
 
   .hero-container {
     display: grid;
-    grid-template-columns: minmax(1rem, 5rem) 2fr minmax(55rem, 65rem);
+    grid-template-columns: minmax(1rem, 5rem) 2fr minmax(55vw, 65rem);
     height: 530px;
     grid-column-gap: 2rem;
   }
@@ -28,6 +28,10 @@ header {
   .hero-text h6 {
     grid-row: 2 / 3;
     max-width: 40rem;
+  }
+
+  .hero-text h6 {
+    font-size: min(max(1.6rem, 2.4vw), 2.4rem);
   }
 
   .hero-text button {
