@@ -17,7 +17,7 @@ header {
     grid-column-end: 3;
     padding-top: 10rem;
     display: grid;
-    grid-template-rows: 9rem 8rem 2rem 5rem;
+    grid-template-rows: 9rem 8rem 4rem 5rem;
     grid-gap: 2rem;
   }
 
@@ -35,9 +35,14 @@ header {
   }
 
   .hero-text button {
-    /* grid-column: 1 / 3; */
     grid-row: 4 / 4;
     width: 20rem;
+  }
+
+  .link-down:hover {
+    border-top: none;
+    padding-top: 0;
+    color: #2D43B4;
   }
 
   .hero-image {
@@ -47,13 +52,6 @@ header {
     background-image: url(../images/homepage/hero-image3.png);
     background-repeat: no-repeat;
     background-size: cover;
-  }
-
-  .headshot-desktop {
-    /* padding-top: 0rem; */
-    /* width: auto;
-    height: 63vh;
-    display: inline; */
   }
 
   .headshot-mobile {
@@ -85,9 +83,17 @@ header {
     width: 30rem;
   }
 
+  .link-down {
+    grid-row: 3;
+  }
+
+  .btn {
+    grid-row: 4;
+  }
+
   .headshot-mobile {
     display: inline;
-    grid-template-row: 2;
+    grid-row: 5;
     height: 15vh;
   }
 
