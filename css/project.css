@@ -45,9 +45,10 @@ header {
 
 h3 {
   margin: 0 auto;
-  max-width: 84rem;
+  max-width: 65rem;
   /* padding-top: 3rem; */
   padding-bottom: 6rem;
+  text-align: center;
 }
 
 h6 {
@@ -105,7 +106,7 @@ h6 {
 
 .project-text {
   padding-top: 2rem;
-  max-width: 84rem;
+  max-width: 65rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -293,7 +294,7 @@ h6 {
   background-image: linear-gradient(180deg, #F3D8F3 0%, #f9edfa 40%, #ffffff 100%);
   border-radius: .5rem;
   padding: 2rem;
-  max-width: 60%;
+  max-width: 65rem;
   margin: 10rem auto 0 auto;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
@@ -304,7 +305,7 @@ h6 {
 
 @media screen and (max-width: 768px) {
   .progress-bar {
-    height: 4.5rem;
+    height: 5.5rem;
   }
 
   .subtitle {
@@ -357,7 +358,7 @@ h6 {
   }
 
   .wireframe-img {
-    width: 98%;
+    width: 100%;
   }
 
   .two, .three, .four {
@@ -378,28 +379,26 @@ h6 {
   }
 
   .logo-img {
-    width: 98%;
+    width: 60%;
   }
 
   .ptest-img-2 {
     max-width: 80%;
   }
 
-  .carousel__track-container {
-    height: 25vh;
-    background: lightgreen;
-  }
-
-  .carousel__track-container2 {
-    /* background: lightgreen; */
-    height: 55%;
+  .carousel {
+    display: none;
   }
 
   .carousel2 {
-    position: relative;
-    height: 60vh;
-    width: 80vw;
-    margin: 0 auto;
+    display: none;
+  }
+
+  .carousel-mobile {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto;
+    grid-row-gap: 3rem;
   }
 }
 
@@ -475,6 +474,10 @@ h6 {
     margin: 0 auto;
     /* margin-top: 8rem;
     margin-bottom: 8rem; */
+  }
+
+  .carousel-mobile {
+    display: none;
   }
 }
 
