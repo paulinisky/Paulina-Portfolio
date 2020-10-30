@@ -100,6 +100,10 @@ header {
   .hero-image, .headshot-desktop {
     display: none;
   }
+
+  h3 {
+    padding-top: 2rem;
+  }
 }
 
 
