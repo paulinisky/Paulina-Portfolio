@@ -88,17 +88,17 @@ h6 {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   border-top: 0;
   padding-top: 0;
-}
 
-  .show {
+  &.show {
     visibility: visible;
     opacity: 1;
   }
 
-  .hide {
+  &.hide {
     visibility: hidden;
     opacity: 0;
   }
+}
 
 
 /* back to top button end */
