@@ -69,6 +69,7 @@ h6 {
   position: fixed;
   bottom: 1rem;
   right: 1rem;
+  display: inline-flex;
   cursor: pointer;
   border-radius: 5rem;
   width: 5rem;
@@ -79,15 +80,6 @@ h6 {
   text-align: center;
   background-color: #4158D0;
   z-index: 997;
-}
-
-.top-link:hover {
-  background-color: #2D43B4;
-  color: #fff;
-  transition: background-color 1s;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  border-top: 0;
-  padding-top: 0;
 
   &.show {
     visibility: visible;
@@ -98,6 +90,15 @@ h6 {
     visibility: hidden;
     opacity: 0;
   }
+}
+
+.top-link:hover {
+  background-color: #2D43B4;
+  color: #fff;
+  transition: background-color 1s;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  border-top: 0;
+  padding-top: 0;
 }
 
 
