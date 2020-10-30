@@ -80,17 +80,17 @@ h6 {
   text-align: center;
   background-color: #4158D0;
   z-index: 997;
+}
 
-  &.show {
+  .show {
     visibility: visible;
     opacity: 1;
   }
 
-  &.hide {
+  .hide {
     visibility: hidden;
     opacity: 0;
   }
-}
 
 .top-link:hover {
   background-color: #2D43B4;
