@@ -202,6 +202,12 @@ nav a {
   background-color: #555459;
 }
 
+.footer-grid p {
+  color: #fff;
+  text-align: center;
+  padding-top: 2rem;
+}
+
 .bottom-nav {
   display: flex;
   flex-direction: row;
@@ -217,6 +223,16 @@ nav a {
   color: #fff;
   font-size: 4rem;
   margin: 0rem 1rem;
+}
+
+.cc {
+  color: #fff;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.cc p {
+  font-size: 1.2rem;
 }
 
 /* footer styles end */
