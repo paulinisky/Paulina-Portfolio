@@ -54,11 +54,15 @@ h6 {
   padding-top: 2rem;
 }
 
+.center {
+  margin: 0 auto;
+  width: 100%;
+}
+
 .icons {
   width: 6rem;
   padding-top: 5rem;
   align-items: center;
-
 }
 
 /* back to top button start */
@@ -871,41 +875,43 @@ h6 {
   /* media gallery final slideshow ends */
 
   /* final touches slideshow without javascript */
-
-
-
+/*
 @keyframes slider {
 
   0% {
     left: 0;
   }
 
-  20% {
+  10% {
     left: 0;
+  }
+
+  15% {
+    left: -100%;
   }
 
   25% {
     left: -100%;
   }
 
+  30% {
+    left: -200%;
+  }
+
+  40% {
+    left: -200%;
+  }
+
   45% {
-    left: -100%;
+    left: -300%;
   }
 
   50% {
-    left: -200%;
-  }
-
-  70% {
-    left: -200%;
-  }
-
-  75% {
     left: -300%;
   }
 
-  95% {
-    left: -300%;
+  60% {
+    left: -400;
   }
 
   100% {
@@ -918,21 +924,37 @@ h6 {
   overflow: hidden;
 }
 
-#slider figure img {
+#slider img {
   width: 20%;
   float: left;
 }
 
-#slider figure {
+#slider {
   position: relative;
   width: 500%;
   margin: 0;
   left: 0;
   text-align: left;
   font-size: 0;
-  animation: 20s slider infinite;
+  animation: 30s slider infinite;
+} */
+
+/* #slider > *:nth-child(1) {
+  animation-delay: 0s;
 }
 
-.fifth-img {
-  animation-delay: 40s;
-  }
+#slider > *:nth-child(2) {
+  animation-delay: 4s;
+}
+
+#slider > *:nth-child(3) {
+  animation-delay: 8s;
+}
+
+#slider > *:nth-child(4) {
+  animation-delay: 12s;
+}
+
+#slider > *:nth-child(5) {
+  animation-delay: 16s;
+} */
