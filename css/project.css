@@ -149,30 +149,25 @@ h6 {
 
 .flex-wrapper-intro {
   display: flex;
-  /* background-color: lightgreen; */
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.homepage {
+.homepage, .intro-img {
   box-shadow: 2px 2px 2px #ebebeb;
   width: 100%;
 }
 
 .intro-img-wrapper {
-  /* background-color: pink; */
-  width: 48%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
 }
 
-
 .intro-img {
   width: 100%;
 }
-
-
 
 .flex-wrapper-four {
   display: flex;
@@ -334,8 +329,13 @@ h6 {
     width: 98%;
   }
 
-  .homepage {
+  .intro-img-wrapper {
     width: 98%;
+    padding-bottom: 3rem;
+  }
+
+  .intro-img {
+    padding-bottom: 3rem;
   }
 
   .flex-wrapper {
@@ -429,11 +429,8 @@ h6 {
     padding-top: 8rem;
   }
 
-.intro-img {
-  /* width: 48%; */
-}
-  .homepage {
-    /* width: 48%; */
+  .intro-img-wrapper {
+    width: 48%;
   }
 
   .survey-img {
